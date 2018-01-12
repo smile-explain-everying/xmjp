@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>地址管理</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=1100,initial-scale=1,maximum-scale=1,user-scalable=yes">
+
+    <link rel="Shortcut Icon" href="../static/favicon.ico">
+    <!-- Standard iPad -->
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="../static/touch-icon-ipad-144.png" />
+    <!-- Retina iPad -->
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="../static/touch-icon-ipad-144.png" />
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/address.css">
+    <!--[if lt IE 9]>
+	<script src="../static/js/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+    <!--头部开始-->
+    <header class="header">
+        <!-- topbar -->
+        <div class="topbar">
+            <div class="layout">
+                <div class="bar_left">
+                    <ul>
+                        <li><span style="color: #fff;">畅想品质生活</span></li>
+                        <li style="margin-left: 40px;"><span>客服电话：400-996-4866</span></li>
+                        <li class="WeChat">
+                            <i></i>
+                            <div>
+                                <span><em></em></span>
+                                <!-- <img src="/static/images/WeChat.jpg"> -->
+                                <p>扫一扫加微信</p>
+                            </div>
+                        </li>
+                        <li class="weibo">
+                            <a href=""><i></i></a>
+                            <!-- <div>
+								<span><em></em></span>
+								<img src="../static/images/weibo.png">
+								<p>扫一扫加微博</p>
+							</div> -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="bar_right" style="display: none;">
+                    <a href="">登录</a>&nbsp;&nbsp;
+                    <a href="">注册&nbsp;&nbsp;|&nbsp;</a>
+                    <a href="">我的订单</a>&nbsp;&nbsp;|
+                    <a href="">下载APP</a>
+                </div>
+                <!-- 登陆后显示 -->
+                <div class="bar_right">
+                    <span>欢迎您</span><a href="">boss，</a>
+                    <a href="javascript:;">退出</a>&nbsp;&nbsp;|
+                    <a href="">我的订单</a>&nbsp;&nbsp;|
+                    <a href="">下载APP</a>
+
+                </div>
+            </div>
+        </div>
+        <!-- topbar-end -->
+        <!-- logo -->
+        <div class="logo">
+            <div class="layout">
+                <div class="logo_left">
+                    <!-- logo size 200px*70px -->
+                    <a href="" class="logoimg">
+						<img src="../static/images/login_log.png" alt="">
+					</a>
+                </div>
+                <div class="logo_right">
+                    <div class="search">
+                        <input type="text" placeholder="黑龙江顶级黑木耳">
+                        <a href="" class=""></a>
+                    </div>
+                    <div class="shopping-cart">
+                        <a href="">
+							<span class="badge">12</span>
+						</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- logo end-->
+        <!-- nav -->
+        <nav class="nav">
+            <div class="layout">
+                <ul class="">
+                    <li><a href="" class="active">首页</a></li>
+                    <li><a href="">进口食品</a></li>
+                    <li><a href="">小家电</a></li>
+                    <li><a href="">养生精品</a></li>
+                    <li><a href="">精品农业</a></li>
+                    <li><a href="">茶叶</a></li>
+                    <li><a href="">户外运动</a></li>
+                    <li><a href="">厨房电器</a></li>
+                    <li><a href="">锅具</a></li>
+                    <li><a href="">生活电器</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- nav-end -->
+
+    </header>
+    <!--头部结束-->
+    <div class="content layout mt40">
+        <!--左边导航-->
+        <div class="left_nav">
+            <ul>
+                <li>
+                    <h4><a href="">个人中心</a></h4>
+                </li>
+                <li><a href="">信息中心</a></li>
+                <li><a href="">个人信息</a></li>
+                <li><a href="">账号安全</a></li>
+                <li><a href="" class="change">地址管理</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h4><a href="">订单管理</a></h4>
+                </li>
+                <li><a href="">订单管理</a></li>
+                <li><a href="">优惠券<span style="color: #e11a1f;">(4)</span></a></li>
+                <li><a href="">交易记录</a></li>
+                <li><a href="">我的收藏</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h4><a href="">我是商户</a></h4>
+                </li>
+                <li><a href="">商品管理</a></li>
+                <li><a href="">生意订单</a></li>
+                <li><a href="">运费管理</a></li>
+                <li><a href="">售后管理</a></li>
+                <li><a href="">活动管理</a></li>
+                <li><a href="">优惠券管理</a></li>
+                <li><a href="">店铺管理</a></li>
+            </ul>
+        </div>
+
+        <div class="content_right">
+            <div class="picker clearfix">
+                <ul class="address">
+                    <li class="clearfix">
+                        <span>所在地区：</span>
+                        <div data-toggle="distpicker" id="distpicker">
+                            <!-- container -->
+                            <select></select>
+                            <!-- 省 -->
+                            <select></select>
+                            <!-- 市 -->
+                            <select></select>
+                            <!-- 区 -->
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <span>详细信息：</span>
+                        <div class="address_info">
+                            <textarea name="" id=""></textarea>
+                        </div>
+                    </li>
+                    <li class="clearfix fn_name">
+                        <span>姓名：</span>
+                        <input type="text" class="name">
+                        <span>手机号码：</span>
+                        <input type="text" class="phone">
+                    </li>
+                </ul>
+                <div class="operation">
+                    <p class="default">
+                        <span class="set">
+                                <input type="checkbox" id="set_label"> 
+                                <label for="set_label"></label>
+                        </span>
+                        <span>设为默认</span>
+                    </p>
+                    <p class="btn">
+                        <a href="javascript:;" class="prese">保存地址</a>
+                        <a href="javascript:;" class="cancle">取消</a>
+                    </p>
+                </div>
+            </div>
+            <ul class="address_list">
+                <li class="address_item clearfix active">
+                    <ul class="info">
+                        <li class="clearfix">
+                            <span class="title">姓名：</span>
+                            <span class="list_name">xxx</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="title">联系方式：</span>
+                            <span class="list_phone">158XXXX6954</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="title">收货地址：</span>
+                            <span class="list_address">辽宁省大连市中山区XXXX</span>
+                        </li>
+                    </ul>
+                    <div class="operation">
+                        <p class="default">
+                            <span class="choice">
+                                        
+                                        <label>
+                                                <input type="radio" name="silent"> 
+                                        </label>
+                                </span>
+                            <span>设为默认</span>
+                        </p>
+                        <p class="btn">
+                            <a href="javascript:;" class="edit">修改信息</a>
+                            <a href="javascript:;" class="delete">删除</a>
+                        </p>
+                    </div>
+                    <i></i>
+                </li>
+                <li class="address_item clearfix">
+                    <ul class="info">
+                        <li class="clearfix">
+                            <span class="title">姓名：</span>
+                            <span class="list_name">xxx</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="title">联系方式：</span>
+                            <span class="list_phone">158XXXX6954</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="title">收货地址：</span>
+                            <span class="list_address">辽宁省大连市中山区XXXX</span>
+                        </li>
+                    </ul>
+                    <div class="operation">
+                        <p class="default">
+                            <span class="choice">
+                                            
+                                            <label>
+                                                    <input type="radio" name="silent"> 
+                                            </label>
+                                    </span>
+                            <span>设为默认</span>
+                        </p>
+                        <p class="btn">
+                            <a href="javascript:;" class="edit">修改信息</a>
+                            <a href="javascript:;" class="delete">删除</a>
+                        </p>
+                    </div>
+                    <i></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 修改地址弹窗 -->
+    <div class="edit_address">
+        <div class="layout">
+            <div class="picker clearfix">
+                <ul class="address">
+                    <li class="clearfix">
+                        <span>所在地区：</span>
+                        <div data-toggle="distpicker">
+                            <select></select>
+                            <select></select>
+                            <select></select>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <span>详细信息：</span>
+                        <div class="address_info">
+                            <textarea name="" id=""></textarea>
+                        </div>
+                    </li>
+                    <li class="clearfix fn_name">
+                        <span>姓名：</span>
+                        <input type="text" class="name">
+                        <span>手机号码：</span>
+                        <input type="text" class="phone">
+                    </li>
+                </ul>
+                <div class="operation">
+                    <p class="default">
+                        <span class="set">
+                            <input type="checkbox" id="set_label"> 
+                            <label for="set_label"></label>
+                        </span>
+                        <span>设为默认</span>
+                    </p>
+                    <p class="btn">
+                        <a href="javascript:;" class="prese">保存地址</a>
+                        <a href="javascript:;" class="cancle">取消</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/distpicker.data.js"></script>
+    <script src="../static/js/distpicker.js"></script>
+    <script src="../static/js/address.js"></script>
+</body>
+
+</html>

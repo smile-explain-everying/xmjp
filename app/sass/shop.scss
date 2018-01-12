@@ -1,0 +1,73 @@
+@charset "utf-8";
+@charset "utf-8";
+/*首页index*/
+@import  "helpers/_mixins.scss";                  //常用变量定义
+@import  "components/banner.scss";                  //banner
+%indexlayout {
+	width:1100px;
+	margin:0 auto;
+	padding:0px;
+}
+.content{
+	.shop-hd{
+		padding: 30px 0;
+		.shop-name{
+			position: relative;
+			padding: 20px 30px;
+			background-color: $borderColor;
+			p{
+				width: 200px;
+				height: 160px;
+				font-size: 18px;
+				text-align: center;
+				line-height: 160px;
+				background-color: $whiteColor;
+			}
+			a{
+				position: absolute;
+				right: 30px;
+				bottom: 10px;
+				display: block;
+				width: 100px;
+				height:36px;
+				line-height: 36px;
+				text-align: center;
+				color: $whiteColor;
+				background-color: $activeColor;
+				&:hover{
+					background-color: #c79a85;
+				}
+			}
+		}
+		.shop-coupon{
+			padding:0 32px;
+			margin-left: -25px;
+			li{
+				float: left;
+				margin-left: 25px;
+				a{
+					display: block;
+					width: 240px;
+					height: 92px;
+					background-image: url(../images/sprite.png);
+					vertical-align: middle;
+					background-position: 0 -345px;
+				}
+			}
+		}
+	}
+	.type-new,.type-campaign{
+		padding: 4px 6px;
+		color: $whiteColor;
+		font-size: 12px;
+		display: inline-block;
+	}
+	.type-new{
+		background-color: #f18031;
+	}
+	.type-campaign{
+		background-color: #f15a31;
+		margin-left: 10px;
+	}
+}
+

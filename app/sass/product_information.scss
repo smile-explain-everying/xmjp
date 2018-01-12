@@ -1,0 +1,463 @@
+  @charset "utf-8";
+/*产品详情信息*/
+@import  "helpers/_mixins.scss";                  //常用变量定义
+
+// 共通样式
+.layout{
+    width: 1100px;
+	margin: 0 auto;
+	padding: 0;
+}
+.content{
+    min-height: 65vh;
+    color: $fontColor;
+}
+
+///////////////////////////商品详情左半部分//////////////////////////
+#product{
+	margin-top: 30px;
+	position: relative;
+	.product_picture{
+		width: 430px;
+		// padding-left: 98px;
+		height: 100%; 
+		.bigImg{  
+			width: 430px; 
+			height:430px;
+			overflow: hidden;
+			position: relative; 
+			img{ 
+				width: 430x; 
+				height: 430px;
+			}
+			#winSelector{ 
+				width:235px; 
+				height:210px;
+				position:absolute; 
+				cursor:crosshair; filter:alpha(opacity=15); 
+				-moz-opacity:0.15;  
+				opacity:0.15; 
+				background-color:#000; 
+				border:1px solid #fff;
+			}
+
+		}
+		.smallImg{
+			width: 430x;
+			height: 82px;
+			margin-top: 15px;
+			#imageMenu {
+				width: 100%;
+				height: 82px;
+				float:left;
+				li {
+					width: 80px;
+					height: 80px;
+					margin-right: 5px; 
+					overflow:hidden; 
+					float:left; 
+					text-align:center;
+					border: 1px solid $borderColor;
+					img{
+						width: 100%;
+						height:100%;
+					}
+				}
+				li:last-child{
+					margin-right: 0;
+				}
+				li.active{
+					border: 1px solid $activeColor;
+				}
+			}
+		}
+
+	}
+	.product_contain{
+		width: 550px;
+		height: 100%;
+		padding: 0 60px;
+		font-size: 12px;
+	}
+}
+#bigView{
+	position:absolute;
+	border: 1px solid #ccc; 
+	overflow: hidden; 
+	z-index:999;
+}
+
+#bigView img{
+	position:absolute;
+}
+
+///////////////////////////商品详情右半部分//////////////////////////
+.product_contain{
+	.product_title{
+           p{
+               display:inline-block;
+			   width: 550px;
+			   @extend %fn_text_overflow;
+           }
+           .title{
+			font-size: 22px;
+		   }
+		   .tips{
+			   color: #999;
+			   font-size:12px;
+			   padding: 10px 0;
+			   span{
+				display: inline-block;
+				padding:0 10px;
+				color:#fff;
+				margin-right: 20px;
+				background: #f18031;
+			   }
+		   }
+           .describe{
+			font-size: 12px;
+			color: #999;
+           }
+		}
+}
+.container_list{
+	background: $titleBackground;
+	margin-top: 20px;
+	padding: 20px;
+	.point{
+		padding-bottom:20px;
+		span{
+			width: auto;
+			padding-bottom: 0;
+		}
+		.bonus{
+		font-size: 30px;
+		color: $priceColor;
+		}
+		.price{
+			text-decoration: line-through;
+			padding:0 20px;
+			color: #999;
+			font-size: 14px;
+		}
+		.coupon{
+			padding: 0 10px;
+			color:$priceColor;
+			background: #ffd6d8;
+			border: 1px solid $priceColor;
+		}
+		.receive{
+			color: $priceColor;
+			padding-left: 10px;
+			cursor:pointer;
+		}
+		.received{
+			color: #999;
+			padding-left: 10px;
+			text-decoration: underline;
+		}
+	}
+	.color_type{
+		.type_color{
+			float: left;
+			display: inline-block;
+			width: 11%;
+			font-size: 14px;
+			padding-right: 5%;
+		}
+	}
+	.type_list{
+		float: left;
+		width: 84%;
+		box-sizing:border-box;
+	}
+    .type_item{
+        display: inline-block;
+        padding: 8px 35px;
+        border: 1px solid $borderColor;
+        margin-right: 30px;
+        line-height: 15px;
+        text-align: center;
+        cursor: default;
+        margin-bottom: 5px;
+		box-sizing:border-box;
+		background: #fff;
+		position: relative;
+        &:hover{
+        	border-color:$activeColor;
+        }
+    }
+    .type_item.active{
+		border: 1px solid $activeColor;
+		i{
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			background: url(../images/sprite.png);
+			background-position: 0 -402px;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+    }
+	.exchange{
+		.type_num{
+			font-size: 14px;
+			padding-right:4%;
+		}
+        #calculation {
+			display: inline-block;
+			width: 118px;
+			height: 28px;
+			border: 1px solid $borderColor;
+			margin-top: 20px;
+			input {
+				width: 50px;
+				height: 24px;
+				text-align: center;
+				line-height: 24px;
+				color: #5e5e5e;
+				border: none;
+				border-left:1px solid $borderColor;
+				border-right:1px solid $borderColor;
+				background: $titleBackground;
+			}
+			span{
+				display: inline-block;
+				text-align: center;
+				width: 28px;
+				height: 28px;
+				line-height: 28px;
+				cursor: pointer;
+				font-size: 14px;
+			}
+		}
+		.zx_stock{
+			font-size: 14px;
+			color: #ccc;
+			padding-left: 20px;
+		}
+	}
+}
+.product_contain .product{
+	padding: 40px 0;
+	border-bottom:1px solid $borderColor;
+	a{
+	   float: left;
+	   margin-right: 10px;
+	}
+	.fn_btn{
+		display: inline-block;
+		width: 168px;
+		height: 48px;
+		border: 1px solid $activeColor;
+		background: $titleBackground;
+		color: $activeColor;
+		text-align: center;
+		line-height: 48px;
+		font-size: 20px;
+		&:hover{
+			background: $activeColor;
+			color: #fff;
+		}
+	}
+	.collection{
+		display: inline-block;
+		width: 48px;
+		height: 48px;
+		text-align: center;
+		border: 1px solid $borderColor;
+		i{
+			width: 18px;
+			height: 18px;
+			background-position: -95px -3px;
+			margin: 5px auto 2px;
+			display: block;
+		}
+		span{
+			font-size: 14px;
+			color: #999;
+		}
+		&:hover{
+			border: 1px solid $activeColor;
+			span{
+			   color: $activeColor;
+			}
+		i{
+			background-position: -95px -23px;
+		}
+		}
+		
+	}
+	.collection.active{
+		border: 1px solid $activeColor;
+		i{
+			background-position: -95px -23px;
+		}
+		span{
+            color: $activeColor;
+		}
+	}
+}
+.product_tip{
+	padding: 20px 0;
+	color: #666;
+	font-size: 14px;
+	.pt15{
+		padding-top: 5px;
+	}
+}
+
+///////////////////////////分享//////////////////////////////////////
+#share{
+	height: 30px;
+	margin: 24px auto 0;
+	span{
+		line-height: 30px;
+		font-size: 12px;
+	}
+	a{
+		display: inline-block;
+		width: 26px;
+		height: 22px;
+		background: url(../images/sprite.png) no-repeat;
+		margin:4px 0 4px 10px;
+	}
+	.bshare-weixin{
+         background-position: 0 -353px;
+	}
+	.bshare-qqim{
+         background-position: -31px -353px;
+	}
+	.bshare-sinaminiblog{
+         background-position: -63px -353px;
+	}
+	.bshare-renren{
+         background-position: -96px -353px;
+	}
+	.bshare-qzone{
+         background-position: -129px -353px;
+	}
+	.bshare-weixin:hover{
+         background-position: 0 -377px;
+	}
+	.bshare-qqim:hover{
+         background-position: -31px -377px;
+	}
+	.bshare-sinaminiblog:hover{
+         background-position: -63px -377px;
+	}
+	.bshare-renren:hover{
+         background-position: -96px -377px;
+	}
+	.bshare-qzone:hover{
+         background-position: -129px -377px;
+	}
+}
+
+///////////////////////////商品详情部分//////////////////////////////
+#product_information{
+	min-height: 300px;
+	border: 1px solid $borderColor;
+	margin-top: 60px;
+	@extend %box-sizing;
+	.product_list{
+		width: 100%;
+		line-height: 40px;
+		border-bottom: 1px solid $borderColor;
+		text-align: center;
+		li{
+			width: 50%;
+			float: left;
+			background: $titleBackground;
+			color: #666;
+		}
+		li:first-child{
+			border-right:1px solid $borderColor;
+			@extend %box-sizing;
+		}
+		li.active{
+			border-top:2px solid $activeColor;
+			background: #fff;
+			margin-top: -1px;
+		}
+	}
+	.product_info{
+		
+		.fn_info{
+			width: 100%;
+			display: none;
+			img{
+				width: 100%;
+				display: block;
+			}
+		}
+		.fn_evaluate{
+			width: 100%;
+			display: none;
+			ul{
+				width: 100%;
+				padding: 0 40px 40px;
+				@extend %box-sizing;
+				li{
+					padding: 40px 0;
+					border-bottom:1px solid $borderColor;
+					.imgs{
+						width: 8%;
+						float:left;
+						text-align: center;
+						img{
+							width:60px;
+							height: 60px;
+							@include border-radius(50%);
+						}
+						span{
+							display: inline-block;
+							font-size: 12px;
+							padding-top:5px;
+							width: 100%;
+							@extend %fn_text_overflow;
+						}
+					}
+					.infor{
+						width: 80%;
+						float: left;
+						margin-left: 5%;
+						.start{
+							span{
+								display: inline-block;
+								width: 18px;
+								height: 18px;
+								background: url(../images/sprite.png);
+								background-position: -95px -23px;
+							}
+						}
+						.text{
+							padding: 10px 0 20px;
+						}
+						.images{
+							img{
+								width: 160px;
+								height: 120px;
+								margin-right: 5px;
+							}
+						}
+						.data{
+							font-size: 12px;
+							color: #999;
+							padding-top:10px;
+						}
+					}
+
+				}
+				li:last-child{
+					border: none;
+					padding-bottom: 0;
+				}
+			}
+		}
+		.show{
+			display: block;
+		}
+	}
+}

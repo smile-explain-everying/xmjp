@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit" />
+	<meta name="viewport" content="width=1100,initial-scale=1,maximum-scale=1,user-scalable=yes">
+	
+	<link rel="Shortcut Icon" href="../static/favicon.ico">
+	<!-- Standard iPad -->  
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="../static/touch-icon-ipad-144.png" />  
+	<!-- Retina iPad -->  
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="../static/touch-icon-ipad-144.png" /> 
+	<link rel="stylesheet" href="../static/css/main.css">
+	<link rel="stylesheet" href="../static/css/register.css">
+	<!--[if lt IE 9]>
+	<script src="../static/js/html5.js"></script>
+	<![endif]-->
+</head> 
+<body>
+	<!--头部-->
+	<header class="header">
+		<div class="topbar">
+			<a class="log"><img src="../static/images/login_log.png"/></a>
+			<div class="nav_right"><a href="">首页</a></div>
+		</div>
+	</header>
+	<!--内容-->
+	<div class="content">
+		<div class="quick"><span>已有小满金服集团账号？</span> <a href="">快捷登录 ></a></div>
+		<div>
+			<h2 class="content_title">欢迎注册小满精品</h2>
+			<form action="" method="post">
+				<div class="form_content" id="form_content">
+					<div class="account_number account_number_err"><span>手机号 :</span><input type="" name="" id="" value="" placeholder="请输入手机号码" /></div>
+					<div class="prompt_error"><p></p><span>提示错误</span></div>
+					<div class="account_number" style="margin-top: 10px;"><span>密码 :</span><input type="" name="" id="" value="" placeholder="请输入登录密码" /></div>
+					<div class="account_number"><span style="width: 80px;margin-left: -21px;">确认密码 :</span><input type="" name="" id="" value="" placeholder="请再次确认密码" /></div>
+					<div class="account_number account_verification"><span>验证码 :</span><input type="" name="" id="" value="" placeholder="输入验证码" /> <img src=""/></div>
+					<div class="account_number account_phone_verification"><span style="width: 90px;margin-left: -30px;">手机验证码 :</span><input type="" name="" id="" value="" placeholder="输入短信验证码" /><a	>获取验证码</a></div>
+					
+					<label><div class="agreement"><input type="checkbox" id="check" /><p>我已阅读并同意用户 <span>使用协议</span></p></div></label>
+					<input class="register_btn" id="register_btn" type="submit" value="注册"/>
+				</div>
+			</form>
+		</div>
+		<div style="text-align: center;margin-top: 10px;"><a href="login.html" style="color: #a6a6a6;">已有账户？登录</a></div>
+	</div>
+	<!--尾部-->
+	<footer class="footer">
+		<p>小满精品电子商务（大连）有限公司 ©2017-2018    备案号：辽ICP备17017511号-1</p>
+	</footer>
+</body>
+</html>
+<script>
+	function agreement_choice(id){
+		this.check=document.getElementById('check');
+		this.register_btn=document.getElementById('register_btn');
+		this.check.checked=false;
+		this.judge=true;
+		this.init();
+	}
+	
+	agreement_choice.prototype.choice=function(){
+		var that=this;
+		that.register_btn.disabled = 'disabled';
+		this.check.onclick=function(){
+			if(that.judge==true){
+				that.register_btn.style.background='#b48b78';
+				that.register_btn.disabled = '';
+				that.judge=false;
+			}else{
+				that.register_btn.style.background='#d2b9ae';
+				that.register_btn.disabled = 'disabled';
+				that.judge=true;
+			}
+		}
+		
+	}
+	agreement_choice.prototype.init=function(){
+		this.choice();
+	}
+	var agreement_Choice=new agreement_choice("form_content");
+</script>

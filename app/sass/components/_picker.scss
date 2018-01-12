@@ -1,0 +1,126 @@
+@charset "utf-8";
+@import  "helpers/_mixins.scss"; 
+
+.picker{
+    width: 100%;
+    border: 1px solid $borderColor;
+    @extend %box-sizing;
+    .address{
+        width: 59%;
+        float: left;
+        margin:40px 40px 20px;
+        border-right:1px solid $borderColor;
+        li{
+            width: 100%;
+            padding-bottom: 20px;
+            span{
+                display: inline-block;
+                width: 14%;
+                float: left;
+                line-height: 30px;
+                text-align: right;
+            }
+            div{
+                float: left;
+                padding-left: 3%;
+                @extend %box-sizing;
+                select{
+                    // width: 127px;
+                    height: 30px;
+                    margin-right: 5px;
+                    border: 1px solid #d6d6d6;
+                }
+            }
+            div.address_info{
+                textarea{
+                    // width: 398px;
+                    height: 105px;
+                    border: 1px solid #d6d6d6;
+                    resize:none
+                }
+            }
+        }
+        li.fn_name{
+            input{
+                float: left;
+                height: 30px;
+                border: 1px solid #d6d6d6;
+            }
+            .name{
+                // width: 100px;
+                margin:0 3%;
+            }
+            .phone{
+                width: 193px;
+                margin-left: 3%;
+            }
+        }
+    }
+    .operation{
+        width: 31%;
+        float: left;
+        margin: 100px 0;
+        .default{
+            font-size:12px;
+            color:#666;
+            .set{
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                position: relative;
+                margin-right: 10px;
+                input{
+                    width: 18px;
+                    height: 18px;
+                    opacity: 0;
+                }
+                label{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid $borderColor;
+                }
+                input:checked+label{
+                    border: 1px solid $activeColor;
+                }
+                input:checked+label::after{
+                    position: absolute;
+                    content: "\2714";
+                    font-size: 18px;
+                    line-height: 18px;
+                    left: 2px;
+                    color: $activeColor;
+                }
+            }
+        }
+        .btn{
+            padding-top: 15px;
+            a{
+                display: inline-block;
+                width: 128px;
+                height: 38px;
+                line-height: 38px;
+                border: 1px solid $activeColor;
+                text-align: center;
+            }
+            .prese{
+                margin-right: 10px;
+                background: $activeColor;
+                color: $whiteColor;
+                &:hover{
+                    background: #c79a85;
+                }
+            }
+            .cancle{
+                color: $activeColor;
+                border: 1px solid $activeColor;
+                background: $titleBackground;
+                &:hover{
+                    background: $whiteColor;
+                }
+            }
+        }
+    }
+}

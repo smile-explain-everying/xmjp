@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/* 单行文字溢出时出现省略号，需设定宽度 */
+/* *********PC端********** */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  list-style: none; }
+
+li {
+  list-style-type: none; }
+
+body {
+  font: 14px/1.5 "微软雅黑", "宋体", arial;
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  min-width: 1100px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+/* 清除点击出现虚拟框 */
+a {
+  -webkit-tap-highlight-color: transparent; }
+  a:focus {
+    outline: 0; }
+  a:link, a:visited {
+    text-decoration: none; }
+
+a img {
+  border: none; }
+
+input, textarea, select {
+  outline: none;
+  font: 12px/1.5 "微软雅黑", "宋体", arial; }
+
+fieldset, img {
+  border: 0; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+caption, th {
+  text-align: left; }
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* 统一上标和下标 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+ins, a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: medium none; }
+
+table, tr {
+  border-collapse: collapse; }
+
+/* 清除浮动 */
+.clearfix, .layout {
+  *zoom: 1; }
+  .clearfix:after, .layout:after {
+    display: block;
+    content: "\200B";
+    clear: both;
+    height: 0; }
+
+.layout {
+  width: 1100px;
+  margin: 0 auto; }
+
+.fn-fl {
+  float: left; }
+
+.fn-tc {
+  text-align: center; }
+
+.fn-tl {
+  text-align: left; }
+
+.fn-tr {
+  text-align: right; }
+
+.fn-fr {
+  float: right; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mt20 {
+  margin-top: 20px; }
+
+.ml20 {
+  margin-left: 20px; }
+
+.mt30 {
+  margin-top: 30px; }
+
+.mt40 {
+  margin-top: 40px; }
+
+.mt60 {
+  margin-top: 40px; }
+
+.fn-rmb {
+  font-family: arial;
+  font-style: normal;
+  padding-right: 4px; }
+
+i {
+  display: inline-block;
+  background-image: url(../images/sprite.png);
+  vertical-align: middle; }
+
+/*zh 2016 0310*/
+.topbar {
+  font-size: 12px;
+  line-height: 40px;
+  background-color: #2e2e2e;
+  color: #cccccc; }
+  .topbar .layout .bar_left {
+    float: left; }
+    .topbar .layout .bar_left ul li {
+      float: left;
+      position: relative; }
+      .topbar .layout .bar_left ul li div {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        height: 160px;
+        padding: 10px;
+        left: -55px;
+        z-index: 99;
+        border: 1px solid #f49128; }
+        .topbar .layout .bar_left ul li div img {
+          width: 150px;
+          height: 150px; }
+        .topbar .layout .bar_left ul li div p {
+          line-height: 12px;
+          margin-top: -10px;
+          color: #000;
+          text-align: center; }
+    .topbar .layout .bar_left ul .WeChat i {
+      width: 22px;
+      height: 18px;
+      margin: -3px 0 0 25px;
+      cursor: pointer;
+      background-position: 0 0; }
+    .topbar .layout .bar_left ul .weibo i {
+      width: 23px;
+      height: 19px;
+      margin: -2px 0 0 20px;
+      cursor: pointer;
+      background-position: -22px 0; }
+  .topbar .layout .bar_right {
+    float: right;
+    color: #cccccc; }
+    .topbar .layout .bar_right a {
+      color: #cccccc;
+      margin: 0 4px; }
+
+.logo {
+  height: 146px; }
+  .logo .logo_left {
+    float: left;
+    margin-top: 30px; }
+  .logo .logo_right {
+    float: right;
+    width: 322px; }
+    .logo .logo_right .search {
+      display: inline-block;
+      float: left;
+      width: 280px;
+      margin-top: 36px; }
+      .logo .logo_right .search input {
+        padding: 8px 15px;
+        width: 210px;
+        border: none;
+        border-bottom: 1px solid #d0d0d0;
+        font-size: 12px; }
+      .logo .logo_right .search a {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        background-image: url(../images/sprite.png);
+        vertical-align: middle;
+        background-position: 0px -22px; }
+    .logo .logo_right .shopping-cart {
+      display: inline-block;
+      float: right;
+      margin: 45px 10px 0 10px; }
+      .logo .logo_right .shopping-cart a {
+        position: relative;
+        display: block;
+        width: 22px;
+        height: 22px;
+        background-image: url(../images/sprite.png);
+        vertical-align: middle;
+        background-position: -25px -22px; }
+        .logo .logo_right .shopping-cart a .badge {
+          display: block;
+          text-align: center;
+          position: absolute;
+          top: -8px;
+          right: -8px;
+          font-size: 12px;
+          letter-spacing: -1px;
+          width: 16px;
+          height: 16px;
+          line-height: 16px;
+          border-radius: 50%;
+          background-color: #e32c31;
+          color: #fff; }
+
+.nav {
+  padding-bottom: 38px;
+  border-bottom: 1px solid #e3e3e3; }
+  .nav .layout ul {
+    margin-left: -10px; }
+    .nav .layout ul li {
+      float: left;
+      padding: 0 30px; }
+      .nav .layout ul li a {
+        font-size: 14px;
+        line-height: 14px;
+        color: #000;
+        font-weight: bold;
+        padding-bottom: 4px; }
+      .nav .layout ul li .active {
+        color: #b48b78;
+        border-bottom: 2px solid #b48b78; }
+
+/*zh 2016 0310*/
+/* 单行文字溢出时出现省略号，需设定宽度 */
+.footer {
+  background-color: #333;
+  padding-top: 20px; }
+  .footer .footer_link {
+    width: 900px;
+    padding: 0 100px 20px; }
+    .footer .footer_link ul {
+      float: left; }
+      .footer .footer_link ul li {
+        font-size: 12px;
+        color: #999999;
+        margin-bottom: 12px; }
+        .footer .footer_link ul li:first-child {
+          font-size: 14px;
+          color: #f3f3f3;
+          margin-bottom: 18px; }
+        .footer .footer_link ul li a {
+          color: #999999; }
+          .footer .footer_link ul li a:hover {
+            color: #b48b78; }
+    .footer .footer_link .footer_col_1, .footer .footer_link .footer_col_2 {
+      width: 134px; }
+    .footer .footer_link .footer_col_3 {
+      width: 134px;
+      height: 150px;
+      border-right: 1px solid #424242; }
+    .footer .footer_link .footer_col_4 {
+      padding-left: 80px; }
+    .footer .footer_link .footer_col_5 {
+      float: right; }
+      .footer .footer_link .footer_col_5 p {
+        font-size: 12px;
+        color: #999999;
+        text-align: center; }
+      .footer .footer_link .footer_col_5 img {
+        width: 100px;
+        height: 100px; }
+  .footer .footer_bar {
+    border-top: 1px solid #424242;
+    width: 900px;
+    padding: 30px 0; }
+    .footer .footer_bar p {
+      font-size: 12px;
+      color: #999999;
+      text-align: center; }
+
+.nav_sidebar_right {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  z-index: 9999; }
+  .nav_sidebar_right li {
+    margin-bottom: 8px; }
+    .nav_sidebar_right li a {
+      display: inline-block;
+      width: 70px;
+      height: 70px;
+      background-color: #fff;
+      background-image: url(../images/sprite.png);
+      vertical-align: middle; }
+    .nav_sidebar_right li .weixin {
+      height: 89px;
+      background-position: -1px -130px; }
+      .nav_sidebar_right li .weixin:hover {
+        background-position: -76px -130px; }
+    .nav_sidebar_right li .contact {
+      background-position: -1px -52px; }
+      .nav_sidebar_right li .contact:hover {
+        background-position: -76px -52px; }
+    .nav_sidebar_right li .weibo {
+      height: 67px;
+      background-position: -1px -227px; }
+      .nav_sidebar_right li .weibo:hover {
+        background-position: -76px -227px; }
+    .nav_sidebar_right li .backtop {
+      height: 43px;
+      background-position: -1px -302px; }
+      .nav_sidebar_right li .backtop:hover {
+        background-position: -76px -302px; }

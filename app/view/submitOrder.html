@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>订单详情</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=1100,initial-scale=1,maximum-scale=1,user-scalable=yes">
+
+    <link rel="Shortcut Icon" href="../static/favicon.ico">
+    <!-- Standard iPad -->
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="../static/touch-icon-ipad-144.png" />
+    <!-- Retina iPad -->
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="../static/touch-icon-ipad-144.png" />
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/submitOrder.css">
+    <!-- <link rel="stylesheet" href="../static/css/webuploader.css"> -->
+    <!--[if lt IE 9]>
+	<script src="../static/js/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+    <!--头部开始-->
+    <header class="header">
+        <!-- topbar -->
+        <div class="topbar">
+            <div class="layout">
+                <div class="bar_left">
+                    <ul>
+                        <li><span style="color: #fff;">畅想品质生活</span></li>
+                        <li style="margin-left: 40px;"><span>客服电话：400-996-4866</span></li>
+                        <li class="WeChat">
+                            <i></i>
+                            <div>
+                                <span><em></em></span>
+                                <!-- <img src="/static/images/WeChat.jpg"> -->
+                                <p>扫一扫加微信</p>
+                            </div>
+                        </li>
+                        <li class="weibo">
+                            <a href=""><i></i></a>
+                            <!-- <div>
+								<span><em></em></span>
+								<img src="../static/images/weibo.png">
+								<p>扫一扫加微博</p>
+							</div> -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="bar_right" style="display: none;">
+                    <a href="">登录</a>&nbsp;&nbsp;
+                    <a href="">注册&nbsp;&nbsp;|&nbsp;</a>
+                    <a href="">我的订单</a>&nbsp;&nbsp;|
+                    <a href="">下载APP</a>
+                </div>
+                <!-- 登陆后显示 -->
+                <div class="bar_right">
+                    <span>欢迎您</span><a href="">boss，</a>
+                    <a href="javascript:;">退出</a>&nbsp;&nbsp;|
+                    <a href="">我的订单</a>&nbsp;&nbsp;|
+                    <a href="">下载APP</a>
+
+                </div>
+            </div>
+        </div>
+        <!-- topbar-end -->
+        <!-- logo -->
+        <div class="logo">
+            <div class="layout">
+                <div class="logo_left">
+                    <!-- logo size 200px*70px -->
+                    <a href="" class="logoimg">
+						<img src="../static/images/login_log.png" alt="">
+					</a>
+                </div>
+                <div class="logo_right">
+                    <div class="search">
+                        <input type="text" placeholder="黑龙江顶级黑木耳">
+                        <a href="" class=""></a>
+                    </div>
+                    <div class="shopping-cart">
+                        <a href="">
+							<span class="badge">12</span>
+						</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- logo end-->
+        <!-- nav -->
+        <nav class="nav">
+            <div class="layout">
+                <ul class="">
+                    <li><a href="" class="active">首页</a></li>
+                    <li><a href="">进口食品</a></li>
+                    <li><a href="">小家电</a></li>
+                    <li><a href="">养生精品</a></li>
+                    <li><a href="">精品农业</a></li>
+                    <li><a href="">茶叶</a></li>
+                    <li><a href="">户外运动</a></li>
+                    <li><a href="">厨房电器</a></li>
+                    <li><a href="">锅具</a></li>
+                    <li><a href="">生活电器</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- nav-end -->
+
+    </header>
+    <!--头部结束-->
+    <div class="content layout mt40">
+        <div class="choice_address">
+            <p class="title">收货地址</p>
+            <!-- 第一种-没有地址 -->
+            <div class="picker clearfix" id="address01">
+                <ul class="address">
+                    <li class="clearfix">
+                        <span>所在地区：</span>
+                        <div data-toggle="distpicker" id="distpicker">
+                            <select></select>
+                            <select></select>
+                            <select></select>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <span>详细信息：</span>
+                        <div class="address_info">
+                            <textarea name="" id=""></textarea>
+                        </div>
+                    </li>
+                    <li class="clearfix fn_name">
+                        <span>姓名：</span>
+                        <input type="text" class="name">
+                        <span>手机号码：</span>
+                        <input type="text" class="phone">
+                    </li>
+                </ul>
+                <div class="operation">
+                    <p class="default">
+                        <input type="checkbox"> 设为默认
+                    </p>
+                    <p class="btn">
+                        <a href="javascript:;" class="prese">保存地址</a>
+                        <a href="javascript:;" class="cancle">取消</a>
+                    </p>
+                </div>
+            </div>
+            <!-- 第二种-有地址 -->
+            <div class="picker clearfix" id="address02">
+                <ul class="address">
+                    <li class="clearfix">
+                        <span>收货人：</span>
+                        <p>***</p>
+                    </li>
+                    <li class="clearfix">
+                        <span>联系方式：</span>
+                        <p>183****3479</p>
+                    </li>
+                    <li class="clearfix fn_name">
+                        <span>收货地址：</span>
+                        <p>辽宁省大连市中山区XXXX</p>
+                    </li>
+                </ul>
+                <div class="operation">
+                    <a href="javascript:;" class="add">新建地址</a>
+                    <a href="javascript:;" class="switch">切换地址</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 新建地址弹窗 -->
+    <div class="edit_address">
+        <div class="layout">
+            <div class="picker clearfix" id="address01">
+                <ul class="address">
+                    <li class="clearfix">
+                        <span>所在地区：</span>
+                        <div data-toggle="distpicker" id="distpicker">
+                            <select></select>
+                            <select></select>
+                            <select></select>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <span>详细信息：</span>
+                        <div class="address_info">
+                            <textarea name="" id=""></textarea>
+                        </div>
+                    </li>
+                    <li class="clearfix fn_name">
+                        <span>姓名：</span>
+                        <input type="text" class="name">
+                        <span>手机号码：</span>
+                        <input type="text" class="phone">
+                    </li>
+                </ul>
+                <div class="operation">
+                    <p class="default">
+                        <span class="set">
+                            <input type="checkbox" id="set_label"> 
+                            <label for="set_label"></label>
+                        </span>
+                        <span>设为默认</span>
+                    </p>
+                    <p class="btn">
+                        <a href="javascript:;" class="prese">保存地址</a>
+                        <a href="javascript:;" class="cancle">取消</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 切换地址弹窗 -->
+    <div class="switch_address">
+        <div class="layout">
+            <div class="switch_box">
+                <p class="title">选择地址</p>
+                <ul class="switch_list">
+                    <li class="active">
+                        <p class="name">
+                            <span class="list_name">姓名：</span>
+                            <span class="contain">XXX</span>
+                        </p>
+                        <p class="phone">
+                            <span class="list_name">联系方式：</span>
+                            <span class="contain">183****4569</span>
+                        </p>
+                        <p class="address">
+                            <span class="list_name">收货地址：</span>
+                            <span class="contain">辽宁省大连市中山区XXXX</span>
+                        </p>
+                        <i></i>
+                    </li>
+                    <li>
+                        <p class="name">
+                            <span class="list_name">姓名：</span>
+                            <span class="contain">XXX</span>
+                        </p>
+                        <p class="phone">
+                            <span class="list_name">联系方式：</span>
+                            <span class="contain">183****4569</span>
+                        </p>
+                        <p class="address">
+                            <span class="list_name">收货地址：</span>
+                            <span class="contain">辽宁省大连市中山区XXXX</span>
+                        </p>
+                        <i></i>
+                    </li>
+                    <li>
+                        <p class="name">
+                            <span class="list_name">姓名：</span>
+                            <span class="contain">XXX</span>
+                        </p>
+                        <p class="phone">
+                            <span class="list_name">联系方式：</span>
+                            <span class="contain">183****4569</span>
+                        </p>
+                        <p class="address">
+                            <span class="list_name">收货地址：</span>
+                            <span class="contain">辽宁省大连市中山区XXXX</span>
+                        </p>
+                        <i></i>
+                    </li>
+                </ul>
+                <div class="draw"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/distpicker.data.js"></script>
+    <script src="../static/js/distpicker.js"></script>
+</body>
+<script>
+    $(function () {
+        // 新增地址
+        $('#address02').find('.add').on('click', function () {
+            $('.edit_address').css('display', 'block');
+        })
+        // 新建地址操作
+        // 保存
+        $('.edit_address').find('.prese').on('click', function () {
+            $('.edit_address').css('display', 'none');
+        })
+        // 取消
+        $('.edit_address').find('.cancle').on('click', function () {
+            $('.edit_address').css('display', 'none');
+        })
+        // 切换地址
+        $('#address02').find('.switch').on('click', function () {
+            $('.switch_address').css('display', 'block');
+        })
+        $('.switch_address ul').on('click', 'li', function () {
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+        $('.switch_address').find('.draw').on('click', function () {
+            $('.switch_address').css('display', 'none')
+        })
+    })
+
+</script>
+
+</html>

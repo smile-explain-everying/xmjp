@@ -1,0 +1,380 @@
+@charset "UTF-8";
+.guess, .guess .product_list, .guess .product_list li .describe, .pay_choice {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* 单行文字溢出时出现省略号，需设定宽度 */
+.guess .product_list li .describe {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.guess .product_list li, .pay_choice .pay_mode li {
+  float: left; }
+
+/* *********PC端********** */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  list-style: none; }
+
+li {
+  list-style-type: none; }
+
+body {
+  font: 14px/1.5 "微软雅黑", "宋体", arial;
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  min-width: 1100px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+/* 清除点击出现虚拟框 */
+a {
+  -webkit-tap-highlight-color: transparent; }
+  a:focus {
+    outline: 0; }
+  a:link, a:visited {
+    text-decoration: none; }
+
+a img {
+  border: none; }
+
+input, textarea, select {
+  outline: none;
+  font: 12px/1.5 "微软雅黑", "宋体", arial; }
+
+fieldset, img {
+  border: 0; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+caption, th {
+  text-align: left; }
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* 统一上标和下标 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+ins, a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: medium none; }
+
+table, tr {
+  border-collapse: collapse; }
+
+/* 清除浮动 */
+.clearfix, .layout {
+  *zoom: 1; }
+  .clearfix:after, .layout:after {
+    display: block;
+    content: "\200B";
+    clear: both;
+    height: 0; }
+
+.layout {
+  width: 1100px;
+  margin: 0 auto; }
+
+.fn-fl {
+  float: left; }
+
+.fn-tc {
+  text-align: center; }
+
+.fn-tl {
+  text-align: left; }
+
+.fn-tr {
+  text-align: right; }
+
+.fn-fr {
+  float: right; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mt20 {
+  margin-top: 20px; }
+
+.ml20 {
+  margin-left: 20px; }
+
+.mt30 {
+  margin-top: 30px; }
+
+.mt40 {
+  margin-top: 40px; }
+
+.mt60 {
+  margin-top: 40px; }
+
+.fn-rmb {
+  font-family: arial;
+  font-style: normal;
+  padding-right: 4px; }
+
+.guess {
+  border: 1px solid #e3e3e3;
+  width: 100%;
+  margin-bottom: 100px; }
+  .guess .guess_title {
+    width: 100%;
+    height: 55px;
+    background: #f6f6f6; }
+    .guess .guess_title span {
+      font-size: 20px;
+      padding-left: 40px;
+      line-height: 55px; }
+  .guess .product_list {
+    width: 100%;
+    padding: 60px 40px 70px; }
+    .guess .product_list li {
+      width: 25%;
+      height: 100%;
+      text-align: center; }
+      .guess .product_list li a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        color: #333; }
+      .guess .product_list li img {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto; }
+      .guess .product_list li .active_label {
+        width: 100%;
+        height: 25px;
+        text-align: center; }
+        .guess .product_list li .active_label span {
+          display: inline-block;
+          padding: 5px 8px;
+          background: #f15a31;
+          color: #fff;
+          font-size: 12px; }
+      .guess .product_list li .describe {
+        width: 100%;
+        font-size: 14px;
+        padding: 5px 5px 5px; }
+        .guess .product_list li .describe:hover {
+          color: #b48b78; }
+      .guess .product_list li .price {
+        color: #e11a1f;
+        font-size: 14px;
+        text-align: center; }
+
+.layout {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0; }
+
+.content {
+  min-height: 65vh;
+  color: #333; }
+
+.pay_title {
+  font-size: 18px;
+  padding: 40px 0 20px 0; }
+
+.pay_choice {
+  padding: 40px;
+  border: 1px solid #e3e3e3; }
+  .pay_choice p {
+    font-size: 16px;
+    padding-bottom: 22px; }
+  .pay_choice p.pay_money .money {
+    font-size: 18px;
+    color: #e11a1f; }
+  .pay_choice .pay_mode {
+    padding: 68px 120px 60px; }
+    .pay_choice .pay_mode li {
+      width: 185px;
+      text-align: center; }
+      .pay_choice .pay_mode li span {
+        display: inline-block;
+        width: 185px;
+        height: 55px;
+        margin-bottom: 40px;
+        background: url(../images/pay_mode.png); }
+      .pay_choice .pay_mode li .wechat {
+        background-position: 0 0; }
+      .pay_choice .pay_mode li .alipay {
+        background-position: 0 -55px; }
+      .pay_choice .pay_mode li .tonglian {
+        background-position: 0 -110px; }
+      .pay_choice .pay_mode li .choice {
+        width: 18px;
+        height: 18px;
+        position: relative;
+        margin: 0 auto; }
+        .pay_choice .pay_mode li .choice input[type="radio"] {
+          width: 18px;
+          height: 18px;
+          opacity: 0; }
+        .pay_choice .pay_mode li .choice label {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 18px;
+          height: 18px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -o-border-radius: 50%;
+          border-radius: 50%;
+          border: 1px solid #ccc; }
+        .pay_choice .pay_mode li .choice input:checked + label {
+          background-color: #fff;
+          border: 1px solid #b48b78; }
+        .pay_choice .pay_mode li .choice input:checked + label::after {
+          position: absolute;
+          content: "";
+          width: 12px;
+          height: 12px;
+          top: 3px;
+          left: 3px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -o-border-radius: 50%;
+          border-radius: 50%;
+          background: #b48b78; }
+    .pay_choice .pay_mode li:first-child {
+      margin-right: 112px; }
+    .pay_choice .pay_mode li:last-child {
+      margin-left: 111px; }
+  .pay_choice .pay_go {
+    text-align: center;
+    padding-bottom: 0; }
+    .pay_choice .pay_go a {
+      display: inline-block;
+      width: 170px;
+      height: 50px;
+      background: #b48b78;
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      line-height: 50px; }
+      .pay_choice .pay_go a:hover {
+        background: #c79a85; }
+
+.popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7); }
+  .popup .box {
+    width: 355px;
+    height: 125px;
+    padding: 80px 100px 60px;
+    background: #fff;
+    margin: 250px auto 0; }
+    .popup .box a {
+      display: inline-block;
+      text-align: center;
+      width: 140px;
+      height: 40px;
+      line-height: 40px;
+      border: 1px solid #e3e3e3;
+      background: #f6f6f6;
+      font-size: 16px;
+      color: #333; }
+      .popup .box a:hover {
+        background: #b48b78;
+        border: 1px solid #b48b78;
+        color: #fff; }
+    .popup .box a.fail {
+      float: right; }
+    .popup .box span {
+      display: block;
+      padding-top: 60px;
+      font-size: 14px;
+      color: #999;
+      text-align: center; }
+
+.pay_success {
+  text-align: center;
+  padding: 180px 0; }
+  .pay_success .icon {
+    margin: 0 auto 40px; }
+    .pay_success .icon i {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background: url(../images/sprite.png);
+      background-position: -151px 0; }
+  .pay_success .text {
+    font-size: 24px;
+    padding-bottom: 40px; }
+  .pay_success .link a {
+    font-size: 14px;
+    color: #999;
+    padding-right: 40px; }
+
+.wechat_pay {
+  padding: 30px 0 60px;
+  border-bottom: 1px solid #e3e3e3; }
+  .wechat_pay .wechat_info {
+    padding: 20px;
+    background: #f6f6f6; }
+    .wechat_pay .wechat_info .notice {
+      font-size: 16px; }
+    .wechat_pay .wechat_info .info {
+      padding-top: 10px;
+      font-size: 14px;
+      color: #999; }
+      .wechat_pay .wechat_info .info .price_info {
+        float: right;
+        font-size: 18px; }
+        .wechat_pay .wechat_info .info .price_info .name {
+          color: #333; }
+        .wechat_pay .wechat_info .info .price_info .price {
+          color: #e11a1f; }
+  .wechat_pay .wechat_img {
+    padding: 70px 270px 20px;
+    height: 351px; }
+    .wechat_pay .wechat_img .code {
+      width: 160px;
+      text-align: center;
+      float: left;
+      margin-top: 60px; }
+      .wechat_pay .wechat_img .code img {
+        width: 160px;
+        height: 160px; }
+      .wechat_pay .wechat_img .code span {
+        font-size: 18px;
+        margin-top: 15px; }
+    .wechat_pay .wechat_img .phone {
+      width: 280px;
+      height: 351px;
+      float: right; }
+  .wechat_pay .other a {
+    color: #5f8ce3; }

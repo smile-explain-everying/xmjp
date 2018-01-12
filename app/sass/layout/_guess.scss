@@ -1,0 +1,67 @@
+@charset "utf-8";
+// 猜你喜欢部分
+.guess{
+    border: 1px solid $borderColor;
+    width: 100%;
+    @extend %box-sizing;
+    margin-bottom: 100px;
+    .guess_title{
+        width: 100%;
+        height: 55px;
+        background: $titleBackground;
+        span{
+            font-size: 20px;
+            padding-left: 40px;
+            line-height: 55px;
+        }
+    }
+    .product_list{
+        width: 100%;
+        padding: 60px 40px 70px;
+        @extend %box-sizing;
+        li{
+            @extend %fn-fl;
+            width: 25%;
+            height: 100%;
+            text-align: center;
+            a{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                color: $fontColor;
+            }
+            img{
+                width: 150px;
+                height: 150px;
+                margin: 0 auto;
+            }
+            .active_label{
+                width:100%;
+                height: 25px;
+                text-align: center;
+                span{
+                    display: inline-block;
+                    padding: 5px 8px;
+                    background: #f15a31;
+                    color: $whiteColor;
+                    font-size:12px;
+                }
+            }
+            .describe{
+                width: 100%;
+                font-size: 14px;
+                padding: 5px 5px 5px;
+                @extend %fn_text_overflow;
+                @extend %box-sizing;
+                &:hover{
+                   color: $activeColor;
+                }
+            }
+            .price{
+                color: $priceColor;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+}

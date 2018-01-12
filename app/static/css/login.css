@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* 单行文字溢出时出现省略号，需设定宽度 */
+.header {
+  height: 150px;
+  background: #f6f6f6;
+  overflow: hidden; }
+  .header .topbar {
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto; }
+    .header .topbar .log {
+      float: left;
+      display: inline-block;
+      margin-top: 40px; }
+    .header .topbar .nav_right {
+      float: right;
+      margin-top: 97px; }
+      .header .topbar .nav_right a {
+        color: #333333; }
+
+.content {
+  height: 560px;
+  background: #666666; }
+  .content .login {
+    width: 448px;
+    height: 426px;
+    background: #ffffff;
+    float: right;
+    margin-top: 68px;
+    margin-right: 200px; }
+    .content .login h3 {
+      font-size: 21px;
+      color: #333333;
+      margin-top: 40px; }
+    .content .login h4 {
+      color: #666666;
+      font-size: 14px;
+      margin-top: 40px; }
+    .content .login .login_content {
+      width: 366px;
+      margin: 0 auto; }
+      .content .login .login_content .account_number {
+        width: 365px;
+        height: 38px;
+        border: 1px solid #d6d6d6;
+        margin-top: 20px; }
+        .content .login .login_content .account_number span {
+          height: 38px;
+          width: 47px;
+          display: inline-block;
+          line-height: 38px;
+          text-align: center;
+          color: #a6a6a6;
+          font-size: 16px;
+          border-right: 1px solid #d6d6d6; }
+        .content .login .login_content .account_number input {
+          width: 300px;
+          height: 36px;
+          border: 0px;
+          font-size: 16px;
+          color: #333333;
+          margin-left: 10px; }
+      .content .login .login_content .account_number_err {
+        border: 1px solid #f43500; }
+      .content .login .login_content .prompt_error span {
+        display: inline-block;
+        color: #f43500;
+        margin-left: 6px;
+        font-size: 12px; }
+      .content .login .login_content .prompt_error p {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        margin-left: 10px;
+        background-image: url(../../static/images/sprite.png);
+        background-position-x: -77px;
+        background-position-y: -4px; }
+      .content .login .login_content .account_Password {
+        margin-top: 8px; }
+      .content .login .login_content .forget_Password {
+        text-align: right;
+        margin-top: 10px;
+        font-size: 12px; }
+        .content .login .login_content .forget_Password a {
+          color: #a6a6a6; }
+      .content .login .login_content .login_btn {
+        width: 100%;
+        height: 50px;
+        color: #fff;
+        background: #b48b78;
+        border: 0px;
+        margin-top: 30px;
+        font-size: 18px;
+        cursor: pointer; }
+      .content .login .login_content .xm_register {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 12px; }
+        .content .login .login_content .xm_register a {
+          color: #a6a6a6; }
+
+.footer {
+  font-size: 12px;
+  color: #666666;
+  text-align: center;
+  margin-top: 30px; }

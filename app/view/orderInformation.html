@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>订单详情</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=1100,initial-scale=1,maximum-scale=1,user-scalable=yes">
+
+    <link rel="Shortcut Icon" href="../static/favicon.ico">
+    <!-- Standard iPad -->
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="../static/touch-icon-ipad-144.png" />
+    <!-- Retina iPad -->
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="../static/touch-icon-ipad-144.png" />
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/orderInformation.css">
+    <!-- <link rel="stylesheet" href="../static/css/webuploader.css"> -->
+    <!--[if lt IE 9]>
+	<script src="../static/js/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+    <!--头部开始-->
+    <header class="header">
+        <!-- topbar -->
+        <div class="topbar">
+            <div class="layout">
+                <div class="bar_left">
+                    <ul>
+                        <li><span style="color: #fff;">畅想品质生活</span></li>
+                        <li style="margin-left: 40px;"><span>客服电话：400-996-4866</span></li>
+                        <li class="WeChat">
+                            <i></i>
+                            <div>
+                                <span><em></em></span>
+                                <!-- <img src="/static/images/WeChat.jpg"> -->
+                                <p>扫一扫加微信</p>
+                            </div>
+                        </li>
+                        <li class="weibo">
+                            <a href=""><i></i></a>
+                            <!-- <div>
+								<span><em></em></span>
+								<img src="../static/images/weibo.png">
+								<p>扫一扫加微博</p>
+							</div> -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="bar_right" style="display: none;">
+                    <a href="">登录</a>&nbsp;&nbsp;
+                    <a href="">注册&nbsp;&nbsp;|&nbsp;</a>
+                    <a href="">我的订单</a>&nbsp;&nbsp;|
+                    <a href="">下载APP</a>
+                </div>
+                <!-- 登陆后显示 -->
+                <div class="bar_right">
+                    <span>欢迎您</span><a href="">boss，</a>
+                    <a href="javascript:;">退出</a>&nbsp;&nbsp;|
+                    <a href="">我的订单</a>&nbsp;&nbsp;|
+                    <a href="">下载APP</a>
+
+                </div>
+            </div>
+        </div>
+        <!-- topbar-end -->
+        <!-- logo -->
+        <div class="logo">
+            <div class="layout">
+                <div class="logo_left">
+                    <!-- logo size 200px*70px -->
+                    <a href="" class="logoimg">
+						<img src="../static/images/login_log.png" alt="">
+					</a>
+                </div>
+                <div class="logo_right">
+                    <div class="search">
+                        <input type="text" placeholder="黑龙江顶级黑木耳">
+                        <a href="" class=""></a>
+                    </div>
+                    <div class="shopping-cart">
+                        <a href="">
+							<span class="badge">12</span>
+						</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- logo end-->
+        <!-- nav -->
+        <nav class="nav">
+            <div class="layout">
+                <ul class="">
+                    <li><a href="" class="active">首页</a></li>
+                    <li><a href="">进口食品</a></li>
+                    <li><a href="">小家电</a></li>
+                    <li><a href="">养生精品</a></li>
+                    <li><a href="">精品农业</a></li>
+                    <li><a href="">茶叶</a></li>
+                    <li><a href="">户外运动</a></li>
+                    <li><a href="">厨房电器</a></li>
+                    <li><a href="">锅具</a></li>
+                    <li><a href="">生活电器</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- nav-end -->
+
+    </header>
+    <!--头部结束-->
+    <div class="content layout mt40 clearfix">
+        <!--左边导航-->
+        <div class="left_nav">
+            <ul>
+                <li>
+                    <h4><a href="">个人中心</a></h4>
+                </li>
+                <li><a href="">信息中心</a></li>
+                <li><a href="">个人信息</a></li>
+                <li><a href="">账号安全</a></li>
+                <li><a href="" class="change">地址管理</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h4><a href="">订单管理</a></h4>
+                </li>
+                <li><a href="">订单管理</a></li>
+                <li><a href="">优惠券<span style="color: #e11a1f;">(4)</span></a></li>
+                <li><a href="">交易记录</a></li>
+                <li><a href="">我的收藏</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h4><a href="">我是商户</a></h4>
+                </li>
+                <li><a href="">商品管理</a></li>
+                <li><a href="">生意订单</a></li>
+                <li><a href="">运费管理</a></li>
+                <li><a href="">售后管理</a></li>
+                <li><a href="">活动管理</a></li>
+                <li><a href="">优惠券管理</a></li>
+                <li><a href="">店铺管理</a></li>
+            </ul>
+        </div>
+        <!-- 右边内容区域 -->
+        <div class="content_right">
+            <div class="order_product">
+                <p class="order_data">
+                    <span class="data">
+                        <span>下单时间：</span>
+                    <span>2017-12-18 13:41:33</span>
+                    </span>
+                    <span class="code">
+                        <span>订单编号：</span>
+                    <span>aAAAASDA58998</span>
+                    </span>
+                </p>
+                <ul class="product clearfix">
+                    <li class="product_img">
+                        <img src="../temp/1.jpg" alt="">
+                    </li>
+                    <li class="product_title">
+                        <p class="title">苏泊尔 一款容量为1.7L的电水壶</p>
+                        <p class="spe">1.7L</p>
+                    </li>
+                    <li class="product_price">
+                        <span>¥</span>2699.00<span></span>
+                    </li>
+                    <li class="product_status">
+                        <span>购买成功</span>
+                    </li>
+                    <li class="oprition">
+                        <a href="">申请退款</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 物流信息模块 -->
+            <div class="logistics">
+                <p class="logistics_title">
+                    <span class="waybill">
+                        <span>运单号码：</span>
+                    <span>14589878566564665465</span>
+                    </span>
+                    <span class="company">
+                        <span>物流公司：</span>
+                    <span>中通</span>
+                    </span>
+                </p>
+                <div class="information">
+                    <!-- 订单信息模块 -->
+                    <div class="info_list">
+                        <p class="seller">
+                            <span class="title">卖家名称：</span>
+                            <span>XX国际</span>
+                        </p>
+                        <p class="buyer">
+                            <span class="title">收&nbsp;货&nbsp;&nbsp;人：</span>
+                            <span>XXX</span>
+                        </p>
+                        <p class="buyer">
+                            <span class="title">联系方式：</span>
+                            <span>15698745896</span>
+                        </p>
+                        <p class="buyer">
+                            <span class="title">收货地址：</span>
+                            <span>辽宁省大连市中山区XXX</span>
+                        </p>
+                    </div>
+                    <!-- 物流信息模块 -->
+                    <div class="logistics_info">
+                        <!-- <div class="logistics_title fn_text_overflow">
+                                    <span>您的包裹目前位于 <span>杭州市,请耐心等待...</span></span>
+                                </div> -->
+                        <ul class="logistics_list">
+                            <li class="logistics_item clearfix">
+                                <div class="item_one">
+                                    <span class="circle"></span>
+                                    <span class="borderLeft"></span>
+                                </div>
+                                <div class="container clearfix">
+                                    <span class="data">2017-3-8</span>
+                                    <span class="week">周三</span>
+                                    <span class="time">22:23:44</span>
+                                    <span class="contain">包裹正在等待揽收</span>
+                                </div>
+                            </li>
+                            <li class="logistics_item clearfix">
+                                <div class="item_one">
+                                    <span class="circle"></span>
+                                    <span class="borderLeft"></span>
+                                </div>
+                                <div class="container clearfix">
+                                    <span class="data"></span>
+                                    <span class="week"></span>
+                                    <span class="time">22:23:44</span>
+                                    <span class="contain">[广州市]广东省广州市花都区白云机场 已发出</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="logistics_item clearfix">
+                                <div class="item_one">
+                                    <span class="circle"></span>
+                                    <span class="borderLeft"></span>
+                                </div>
+                                <div class="container clearfix">
+                                    <span class="data">2017-3-8</span>
+                                    <span class="week">周三</span>
+                                    <span class="time">22:23:44</span>
+                                    <span class="contain">[广州市]圆通速递 广东省广州市花都区白云机场收件员 已揽件</span>
+                                </div>
+                            </li>
+                            <li class="logistics_item clearfix">
+                                <div class="item_one">
+                                    <span class="circle"></span>
+                                    <span class="borderLeft"></span>
+                                </div>
+                                <div class="container clearfix">
+                                    <span class="data">2017-3-8</span>
+                                    <span class="week">周三</span>
+                                    <span class="time">22:23:44</span>
+                                    <span class="contain">广东省广州市花都区白云机场公司 已收件</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 确认收货操作 -->
+                    <div class="receipt">
+                        <p class="count_down">
+                            <span>剩余时间：</span>
+                            <span>9天23小时</span>
+                        </p>
+                        <p class="receipt_opertion clearfix">
+                            <a href="" class="good_receipt">确认收货</a>
+                            <span class="tip">
+                                <a href="" class="extend">延长收货时间</a>
+                                <span>发货时间超过10天后，系统将默认确认收货。有疑问，请拨打客服：400-996-4866</span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 评价模块 -->
+            <div class="evaluate_title">您的评价</div>
+            <div class="evaluate">
+                <p class="start clearfix">
+                    <span class="start_title">满意度：</span>
+                    <span class="starts">
+                        <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </span>
+                </p>
+                <p class="feel">
+                    <textarea name="" id="" placeholder="谈谈您对商品的感想"></textarea>
+                </p>
+                <p class="add_img">
+                    <a href="javascript:;" class="add">添加图片</a>
+                    <span class="img_box">
+                        <a href="">
+                            <img src="" alt="">
+                        </a>
+                    </span>
+                </p>
+                <p class="publish">
+                    <a href="javascript:;">发表评论</a>
+                </p>
+            </div>
+        </div>
+    </div>
+     <!-- 猜你喜欢部分 -->
+     <div class="guess">
+            <p class="guess_title">
+                <span>猜你喜欢</span>
+            </p>
+            <ul class="product_list clearfix">
+                <li class="product_item">
+                    <a href="">
+                        <img src="../temp/guess01.png" alt="">
+                         <p class="active_label">
+                             <span>活动促销</span>
+                        </p>
+                        <p class="describe">苏泊尔  一款容量为1.7L的电水壶的电水壶的电水壶的电水壶</p>  
+                        <p class="price">
+                            <span>￥</span>
+                            <span>999.00</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="product_item">
+                    <a href="">
+                        <img src="../temp/guess02.png" alt="">
+                        <p class="active_label"></p>
+                        <p class="describe">FREE ROCKSTUD 小号肩背包</p>  
+                        <p class="price">
+                            <span>￥</span>
+                            <span>666.00</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="product_item">
+                    <a href="">
+                        <img src="../temp/guess03.png" alt="">
+                        <p class="active_label"></p>
+                        <p class="describe">踏步机家用静音减肥脚踏机</p>  
+                        <p class="price">
+                            <span>￥</span>
+                            <span>888.00</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="product_item">
+                    <a href="">
+                        <img src="../temp/guess04.png" alt="">
+                        <p class="active_label"></p>
+                        <p class="describe">爱仕达 中国红新不粘三件套装锅</p>  
+                        <p class="price">
+                            <span>￥</span>
+                            <span>178.00</span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 猜你喜欢结束 -->
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="../static/js/webuploader.min.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+.content {
+  height: 100%;
+  width: 100%;
+  background-color: #f5f5f5; }
+
+.getticketList {
+  width: 1160px;
+  margin-top: 60px; }
+  .getticketList li {
+    display: inline-block;
+    width: 530px;
+    height: 170px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    background: url("/static/tempimages/ticketbg01.png"); }
+    .getticketList li p {
+      float: left; }
+    .getticketList li .left {
+      margin-top: 20px;
+      margin-left: 34px; }
+    .getticketList li .middle {
+      width: 200px;
+      height: 130px;
+      padding-top: 42px;
+      padding-left: 20px; }
+      .getticketList li .middle .manjian {
+        font-size: 20px;
+        color: #b48b78; }
+      .getticketList li .middle .dateTo {
+        font-size: 14px; }
+      .getticketList li .middle .where {
+        font-size: 16px;
+        color: #666666; }
+    .getticketList li .right {
+      margin-left: 30px;
+      margin-top: 45px;
+      width: 87px;
+      height: 87px;
+      font-size: 14px;
+      text-align: center; }
+      .getticketList li .right .getnow {
+        display: inline-block;
+        text-align: center;
+        margin-top: 20px;
+        width: 80px;
+        height: 30px;
+        background-color: #b48b78;
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 30px; }
+
+.lodemore {
+  text-align: center; }
