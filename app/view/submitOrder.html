@@ -151,7 +151,7 @@
                 </div>
             </div>
             <!-- 第二种-有地址 -->
-            <div class="picker clearfix" id="address02">
+            <div class="picker clearfix have_address" id="address02">
                 <ul class="address">
                     <li class="clearfix">
                         <span>收货人：</span>
@@ -174,7 +174,7 @@
         </div>
     </div>
     <!-- 新建地址弹窗 -->
-    <div class="edit_address">
+    <div class="add_address">
         <div class="layout">
             <div class="picker clearfix" id="address01">
                 <ul class="address">
@@ -275,34 +275,7 @@
     <script type="text/javascript" src="../static/js/jquery.min.js"></script>
     <script src="../static/js/distpicker.data.js"></script>
     <script src="../static/js/distpicker.js"></script>
+    <script src="../static/js/switch_address.js"></script>
 </body>
-<script>
-    $(function () {
-        // 新增地址
-        $('#address02').find('.add').on('click', function () {
-            $('.edit_address').css('display', 'block');
-        })
-        // 新建地址操作
-        // 保存
-        $('.edit_address').find('.prese').on('click', function () {
-            $('.edit_address').css('display', 'none');
-        })
-        // 取消
-        $('.edit_address').find('.cancle').on('click', function () {
-            $('.edit_address').css('display', 'none');
-        })
-        // 切换地址
-        $('#address02').find('.switch').on('click', function () {
-            $('.switch_address').css('display', 'block');
-        })
-        $('.switch_address ul').on('click', 'li', function () {
-            $(this).addClass('active').siblings().removeClass('active');
-        })
-        $('.switch_address').find('.draw').on('click', function () {
-            $('.switch_address').css('display', 'none')
-        })
-    })
-
-</script>
 
 </html>
