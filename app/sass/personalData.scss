@@ -1,4 +1,4 @@
-//活动中心头部banner
+//个人资料 personalData
 @charset "UTF-8";
 @import  "helpers/_mixins.scss";
 @import  "components/_personalCenterLeftNav.scss";
@@ -22,7 +22,11 @@
     }
 }
 .userPhoto{
+    cursor: pointer;
     position: relative;
+    img{
+        border-radius: 35px;
+    }
 }
 .imgcamera{
         position: absolute;
@@ -43,7 +47,7 @@
     }
 }
 #submit{
-    display: none;
+   opacity: 0;
 }
 .submitBtn{
     margin-top: 40px;
@@ -56,73 +60,76 @@
     line-height: 40px;
     cursor: pointer;
 }
-.zz{
-    display: none;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 120%;
-    background-color: black;
-    z-index:1001;
-    -moz-opacity: 0.8;
-    opacity:.80;
-    filter: alpha(opacity=80);
+.submitBtn:hover{
+    background-color: #c79a85;
 }
-.pop{
-    display: none;
-    position: absolute;
-     top: 50%;
-    left: 50%;
-    margin-top:-300px;
-    margin-left:-269px;
-    width: 600px;
-    height: 538px;
-    background-color: white;
-    z-index:1002;
-    overflow: auto;
-    p{  
-        width: 30px;
-        height: 30px;
-        i{
-           width: 20px;
-           height: 20px;
-           background-image: url(../images/sprite.png);vertical-align: middle;
-            background-position:-50px 2px; 
-        }
-        cursor: pointer;
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        top: 30px;
-        right: 30px;
-        
-    }
-    .poptext{
-        position: absolute;
-        top:50px;
-        left:60px;
-        font-size: 18px;
-    }
-    .addimg{
-        margin: 0 auto;
-        width: 200px;
-        height: 60px;
-        border: 1px solid #e3e3e3;
-        text-align: center;
-        line-height: 60px;
-        margin-top: 218px;
-    }
-    .confirm{
-        background-color: #b48b78;
-        text-align: center;
-        line-height: 40px;
-        width: 140px;
-        height: 40px;
-        font-size:16px;
-        color: #FFFFFF;
-        margin: 0 auto;
-        margin-top: 130px;
-        cursor: pointer;
-    }
-}
+//.zz{
+//  display: none;
+//  position: absolute;
+//  top: 0%;
+//  left: 0%;
+//  width: 100%;
+//  height: 120%;
+//  background-color: black;
+//  z-index:1001;
+//  -moz-opacity: 0.8;
+//  opacity:.80;
+//  filter: alpha(opacity=80);
+//}
+//.pop{
+//  display: none;
+//  position: absolute;
+//   top: 50%;
+//  left: 50%;
+//  margin-top:-300px;
+//  margin-left:-269px;
+//  width: 600px;
+//  height: 538px;
+//  background-color: white;
+//  z-index:1002;
+//  overflow: auto;
+//  p{  
+//      width: 30px;
+//      height: 30px;
+//      i{
+//         width: 20px;
+//         height: 20px;
+//         background-image: url(../images/sprite.png);vertical-align: middle;
+//          background-position:-50px 2px; 
+//      }
+//      cursor: pointer;
+//      position: absolute;
+//      width: 20px;
+//      height: 20px;
+//      top: 30px;
+//      right: 30px;
+//      
+//  }
+//  .poptext{
+//      position: absolute;
+//      top:50px;
+//      left:60px;
+//      font-size: 18px;
+//  }
+//  .addimg{
+//      margin: 0 auto;
+//      width: 200px;
+//      height: 60px;
+//      border: 1px solid #e3e3e3;
+//      text-align: center;
+//      line-height: 60px;
+//      margin-top: 218px;
+//  }
+//  .confirm{
+//      background-color: #b48b78;
+//      text-align: center;
+//      line-height: 40px;
+//      width: 140px;
+//      height: 40px;
+//      font-size:16px;
+//      color: #FFFFFF;
+//      margin: 0 auto;
+//      margin-top: 130px;
+//      cursor: pointer;
+//  }
+//}

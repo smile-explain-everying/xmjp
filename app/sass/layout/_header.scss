@@ -131,7 +131,7 @@
 				a{
 					font-size: 14px;
 					line-height: 14px;
-					color:$blackColor;
+					color:$fontColor;
 					font-weight: bold;
 					padding-bottom: 4px;
 
@@ -143,4 +143,111 @@
 			}
 		}
 	}
+}
+.login-pop{
+	position: fixed;
+	padding: 60px 0;
+	width: 400px;
+	height: 286px;
+	top: 50%;
+	left: 50%;
+	background-color: $whiteColor;
+	z-index: 9999;
+	margin: -200px 0 0 -203px;
+	text-align: center;
+	h5{
+		font-size: 16px;
+		color: $fontColor;
+	}
+	.account_number{
+        width: 285px;
+        height: 34px;
+        border: 1px solid #d6d6d6;
+        margin: 20px auto 0;
+    	text-align: left;
+        span{
+            height: 34px;
+            width: 44px;
+            display: inline-block;
+            line-height: 38px;
+            text-align: center;
+            color: #a6a6a6;
+            font-size: 14px;
+            border-right: 1px solid #d6d6d6;
+        }
+        input{
+            width: 230px;
+            height: 30px;	
+            border: 0px;
+            font-size: 14px;
+            color: #333333;
+            margin-left: 10px;
+
+        }
+        
+    }
+    //错误提示
+    .account_number_err{
+        border: 1px solid #f43500;
+    }
+    .prompt_error{
+    	text-align:left;
+    	margin-left: 60px;
+        span{
+            display: inline-block;
+            color: #f43500;
+            margin-left: 6px;
+            font-size: 12px;
+        }
+        i{
+          
+            width: 13px;
+            height: 13px;
+            margin-left: 10px;
+            background-position-x: -77px;
+            background-position-y: -4px;       
+        }
+    }
+//          密码输入框
+    .account_Password{
+        margin-top: 0px;
+    }
+    .forget_Password{
+        text-align: right;
+        margin-top: 10px;
+        margin-right: 60px;
+        font-size: 12px;
+        a{
+            color: #a6a6a6;
+        }
+    }
+    //登录按钮
+    .login_btn{
+        width: 284px;
+        height: 46px;
+        color: #fff;
+        background: #b48b78;
+        border: 0px;
+        margin-top: 30px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .xm_register{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 12px;
+        a{
+            color: #a6a6a6;
+        }
+    }
+
+}
+.mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background-color: rgba(0,0,0,.6);
 }

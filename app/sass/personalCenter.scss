@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import  "helpers/_mixins.scss";
 @import  "components/_personalCenterLeftNav.scss";
+@import  "layout/_guess.scss";
 .content{
     width: 1100px;
     margin: 0 auto;
@@ -55,6 +56,9 @@
                             margin-top: 30px;
                             font-size: 14px;
                             color: #333333;
+                            a{
+                              color: #333333;  
+                            }
                         }
                         p{
                             font-size: 12px;
@@ -83,11 +87,14 @@
                         h4{
                             margin-top: 0px;
                             margin-bottom: 10px;
+                            a{
+                                color: #333333;;
+                            }
                         }
                     }
                     li:nth-child(5){
                         margin-left: 53px;
-                        button{
+                        .btn{
                             width: 88px;
                             height: 28px;
                             border: 1px solid #c6c6c6;

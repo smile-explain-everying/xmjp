@@ -437,9 +437,13 @@
 						}
 						.images{
 							img{
-								width: 160px;
-								height: 120px;
+								width: 100px;
+								height: 100px;
 								margin-right: 5px;
+							}
+							img.large{
+								width: 300px;
+								height: 300px;
 							}
 						}
 						.data{

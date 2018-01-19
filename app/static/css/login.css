@@ -7,7 +7,8 @@
   .header .topbar {
     width: 1100px;
     height: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    background: #f6f6f6; }
     .header .topbar .log {
       float: left;
       display: inline-block;
@@ -99,7 +100,7 @@
         .content .login .login_content .xm_register a {
           color: #a6a6a6; }
 
-.footer {
+.footers {
   font-size: 12px;
   color: #666666;
   text-align: center;

@@ -353,9 +353,12 @@
           #product_information .product_info .fn_evaluate ul li .infor .text {
             padding: 10px 0 20px; }
           #product_information .product_info .fn_evaluate ul li .infor .images img {
-            width: 160px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             margin-right: 5px; }
+          #product_information .product_info .fn_evaluate ul li .infor .images img.large {
+            width: 300px;
+            height: 300px; }
           #product_information .product_info .fn_evaluate ul li .infor .data {
             font-size: 12px;
             color: #999;

@@ -1,7 +1,12 @@
+@charset "UTF-8";
+/* 单行文字溢出时出现省略号，需设定宽度 */
 .content {
   height: 100%;
   width: 100%;
   background-color: #f5f5f5; }
+
+.listbox {
+  margin-bottom: 100px; }
 
 .getticketList {
   width: 1160px;
@@ -18,6 +23,9 @@
     .getticketList li .left {
       margin-top: 20px;
       margin-left: 34px; }
+      .getticketList li .left img {
+        width: 130px;
+        height: 130px; }
     .getticketList li .middle {
       width: 200px;
       height: 130px;
@@ -38,7 +46,17 @@
       height: 87px;
       font-size: 14px;
       text-align: center; }
+      .getticketList li .right strong {
+        float: right;
+        display: block;
+        width: 104px;
+        margin-top: 26px;
+        text-align: center;
+        font-size: 14px;
+        color: red;
+        font-weight: normal; }
       .getticketList li .right .getnow {
+        cursor: pointer;
         display: inline-block;
         text-align: center;
         margin-top: 20px;
@@ -48,6 +66,11 @@
         color: #ffffff;
         font-size: 14px;
         line-height: 30px; }
+      .getticketList li .right .getnow:hover {
+        background-color: #c79a85; }
 
 .lodemore {
   text-align: center; }
+  .lodemore a {
+    color: #333333;
+    font-size: 16px; }

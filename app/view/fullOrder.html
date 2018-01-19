@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit" />
+		<meta name="viewport" content="width=1100,initial-scale=1,maximum-scale=1,user-scalable=yes">
+
+		<link rel="Shortcut Icon" href="../static/favicon.ico">
+		<!-- Standard iPad -->
+		<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="../static/touch-icon-ipad-144.png" />
+		<!-- Retina iPad -->
+		<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="../static/touch-icon-ipad-144.png" />
+		<link rel="stylesheet" href="../static/css/main.css">
+		<link rel="stylesheet" href="../static/css/fullOrder.css">
+		<!--[if lt IE 9]>
+	<script src="../static/js/html5.js"></script>
+	<![endif]-->
+	</head>
+
+	<body style="display: none;">
+		<!--头部-->
+		<header class="header">
+			<div class="topbar">
+				<div class="layout">
+					<div class="bar_left">
+						<ul>
+							<li><span style="color: #fff;">畅想品质生活</span></li>
+							<li style="margin-left: 40px;"><span>客服电话：400-996-4866</span></li>
+							<li class="WeChat">
+								<i></i>
+								<div>
+									<span><em></em></span>
+									<img src="../static/images/WeChat.jpg">
+									<p>扫一扫加微信</p>
+								</div>
+							</li>
+							<li class="weibo">
+								<a href=""><i></i></a>
+								<!-- <div>
+								<span><em></em></span>
+								<img src="../static/images/weibo.png">
+								<p>扫一扫加微博</p>
+							</div> -->
+							</li>
+						</ul>
+					</div>
+					<div class="bar_right" style="display: none" ;>
+						<a href="">登录</a>&nbsp;&nbsp;
+						<a href="">注册</a>&nbsp;&nbsp;|&nbsp;
+						<a href="">我的订单</a>&nbsp;&nbsp;|
+						<a href="">下载APP</a>
+					</div>
+					<!-- 登陆后显示 -->
+					<div class="bar_right">
+						<span>欢迎您</span>
+						<a href="">boss，</a>
+						<a href="javascript:;">退出</a>&nbsp;&nbsp;|
+						<a href="">我的订单</a>&nbsp;&nbsp;|
+						<a href="">下载APP</a>
+
+					</div>
+
+				</div>
+			</div>
+			<!-- topbar-end -->
+			<div class="logo">
+				<div class="layout">
+					<div class="logo_left">
+						<!-- logo size 200px*70px -->
+						<a href="" class="logoimg">
+							<img src="../static/images/login_log.png" alt="">
+						</a>
+					</div>
+					<div class="logo_right">
+						<div class="search">
+							<input type="text" placeholder="黑龙江顶级黑木耳">
+							<a href="" class=""></a>
+						</div>
+						<div class="shopping-cart">
+							<a href="">
+								<span class="badge">12</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="nav">
+				<div class="layout">
+					<ul class="">
+						<li>
+							<a href="" class="active">首页</a>
+						</li>
+						<li>
+							<a href="">进口食品</a>
+						</li>
+						<li>
+							<a href="">小家电</a>
+						</li>
+						<li>
+							<a href="">养生精品</a>
+						</li>
+						<li>
+							<a href="">精品农业</a>
+						</li>
+						<li>
+							<a href="">茶叶</a>
+						</li>
+						<li>
+							<a href="">户外运动</a>
+						</li>
+						<li>
+							<a href="">厨房电器</a>
+						</li>
+						<li>
+							<a href="">锅具</a>
+						</li>
+						<li>
+							<a href="">生活电器</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--内容-->
+		<div class="content">
+			<!--左边导航-->
+			<div class="left_nav">
+				<ul>
+					<li>
+						<h4><a href="">个人中心</a></h4></li>
+					<li>
+						<a href="">信息中心</a>
+					</li>
+					<li>
+						<a href="">个人信息</a>
+					</li>
+					<li>
+						<a href="">账号安全</a>
+					</li>
+					<li>
+						<a href="">地址管理</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<h4><a href="">订单管理</a></h4></li>
+					<li>
+						<a href="" class="change">订单管理</a>
+					</li>
+					<li>
+						<a href="">优惠券<span style="color: #e11a1f;">(4)</span></a>
+					</li>
+					<li>
+						<a href="">交易记录</a>
+					</li>
+					<li>
+						<a href="">我的收藏</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<h4><a href="">我是商户</a></h4></li>
+					<li>
+						<a href="">商品管理</a>
+					</li>
+					<li>
+						<a href="">生意订单</a>
+					</li>
+					<li>
+						<a href="">运费管理</a>
+					</li>
+					<li>
+						<a href="">售后管理</a>
+					</li>
+					<li>
+						<a href="">活动管理</a>
+					</li>
+					<li>
+						<a href="">优惠券管理</a>
+					</li>
+					<li>
+						<a href="">店铺管理</a>
+					</li>
+				</ul>
+			</div>
+			<div class="content_right">
+				<div class="content_right_title">
+					<ul>
+						<li>
+							<a href="" class="run">全部订单</a>
+						</li>
+						<li>
+							<a href="">待付款</a>
+						</li>
+						<li>
+							<a href="">待发货</a>
+						</li>
+						<li>
+							<a href="">待收货</a>
+						</li>
+						<li>
+							<a href="">待评价</a>
+						</li>
+						<li>
+							<a href="">查看全部</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="operation">
+					<ul>
+						<li>商品</li>
+						<li>单价</li>
+						<li>数量</li>
+						<li>操作</li>
+						<li>实付款</li>
+						<li>交易状态</li>
+						<li>交易操作</li>
+					</ul>
+				</div>
+
+				<!--订单详情-->
+				<div class="order_details">
+					<div class="order_details_title">
+						<ul class="order_time">
+							<li>下单时间：2017-12-18 13:41:33</li>
+							<li>订单编号：aAAAASDA58998</li>
+							<li>店铺名称：XXXXXXX</li>
+							<li>
+								<a href="">联系店长</a>
+							</li>
+						</ul>
+					</div>
+					<div class="each_order commodity_details">
+						<div class="each_order_left">
+							<ul>
+								<li>
+									<a href=""><img src="../static/tempimages/mycollection01.jpg" /></a>
+								</li>
+								<li>
+									<p>COACH 蔻驰 奢侈品 男款黑色皮质双肩背包</p>
+								</li>
+								<li>
+									<p>￥ 20.00</p>
+								</li>
+								<li>
+									<p>1</p>
+								</li>
+								<li>
+									<p>退货</p>
+								</li>
+							</ul>
+
+							<ul>
+								<li>
+									<a href=""><img src="../static/tempimages/mycollection01.jpg" /></a>
+								</li>
+								<li>
+									<p>COACH 蔻驰 奢侈品 男款黑色皮质双肩背包</p>
+								</li>
+								<li>
+									<p>￥ 20.00</p>
+								</li>
+								<li>
+									<p>1</p>
+								</li>
+								<li>
+									<p>退货</p>
+								</li>
+							</ul>
+
+						</div>
+						<div class="each_order_right commodity_details">
+							<ul>
+								<li>
+									<p>￥2499.00</p>
+									<p>(含运费：￥20.00元)</p>
+								</li>
+								<li>
+									<a href="">查看详情</a>
+									<a href="">买家已发货</a>
+									<a href="">查看物流</a>
+								</li>
+								<li class="available_one" data-timer="2018/2/25 00:00:00">
+									<p class="day_h">剩余时间：9天23小时</p>
+									<a class="btn" href="">确认收货</a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+				<!--订单详情 end-->
+
+				<!--订单详情-->
+				<div class="order_details">
+					<div class="order_details_title">
+						<ul class="order_time">
+							<li>下单时间：2017-12-18 13:41:33</li>
+							<li>订单编号：aAAAASDA58998</li>
+							<li>店铺名称：XXXXXXX</li>
+							<li>
+								<a href="">联系店长</a>
+							</li>
+						</ul>
+					</div>
+					<div class="each_order commodity_details">
+						<div class="each_order_left">
+							<ul>
+								<li>
+									<a href=""><img src="../static/tempimages/mycollection01.jpg" /></a>
+								</li>
+								<li>
+									<p>COACH 蔻驰 奢侈品 男款黑色皮质双肩背包</p>
+								</li>
+								<li>
+									<p>￥ 20.00</p>
+								</li>
+								<li>
+									<p>1</p>
+								</li>
+								<li>
+									<p>退货</p>
+								</li>
+							</ul>
+							
+
+						</div>
+						<div class="each_order_right commodity_details">
+							<ul>
+								<li>
+									<p>￥2499.00</p>
+									<p>(含运费：￥20.00元)</p>
+								</li>
+								<li>
+									<a href="">查看详情</a>
+									<a href="">购买成功</a>
+									<a href="">查看物流</a>
+									<a href="">未评价</a>
+								</li>
+								<li>
+									
+									<a class="btn" href="">去评价</a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+				<!--订单详情 end-->
+				
+				<!--订单详情-->
+				<div class="order_details">
+					<div class="order_details_title">
+						<ul class="order_time">
+							<li>下单时间：2017-12-18 13:41:33</li>
+							<li>订单编号：aAAAASDA58998</li>
+							<li>店铺名称：XXXXXXX</li>
+							<li>
+								<a href="">联系店长</a>
+							</li>
+						</ul>
+					</div>
+					<div class="each_order commodity_details">
+						<div class="each_order_left">
+							<ul>
+								<li>
+									<a href=""><img src="../static/tempimages/mycollection01.jpg" /></a>
+								</li>
+								<li>
+									<p>COACH 蔻驰 奢侈品 男款黑色皮质双肩背包</p>
+								</li>
+								<li>
+									<p>￥ 20.00</p>
+								</li>
+								<li>
+									<p>1</p>
+								</li>
+								<li>
+									<p>退货</p>
+								</li>
+							</ul>
+							
+
+						</div>
+						<div class="each_order_right commodity_details">
+							<ul>
+								<li>
+									<p>￥2499.00</p>
+									<p>(含运费：￥20.00元)</p>
+								</li>
+								<li>
+									<a href="">查看详情</a>
+									<a href="">等待买家付款</a>
+									<a href="">取消订单</a>
+								</li>
+								<li>
+									
+									<a class="btn" href="">去付款</a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+				<!--订单详情 end-->
+				
+				<!--订单详情-->
+				<div class="order_details">
+					<div class="order_details_title">
+						<ul class="order_time">
+							<li>下单时间：2017-12-18 13:41:33</li>
+							<li>订单编号：aAAAASDA58998</li>
+							<li>店铺名称：XXXXXXX</li>
+							<li>
+								<a href="">联系店长</a>
+							</li>
+						</ul>
+					</div>
+					<div class="each_order commodity_details">
+						<div class="each_order_left">
+							<ul>
+								<li>
+									<a href=""><img src="../static/tempimages/mycollection01.jpg" /></a>
+								</li>
+								<li>
+									<p>COACH 蔻驰 奢侈品 男款黑色皮质双肩背包</p>
+								</li>
+								<li>
+									<p>￥ 20.00</p>
+								</li>
+								<li>
+									<p>1</p>
+								</li>
+								<li>
+									<p>退货</p>
+								</li>
+							</ul>
+							
+
+						</div>
+						<div class="each_order_right commodity_details">
+							<ul>
+								<li>
+									<p>￥2499.00</p>
+									<p>(含运费：￥20.00元)</p>
+								</li>
+								<li>
+									<a href="">查看详情</a>
+									<a href="">交易关闭</a>
+									
+								</li>
+								<li>
+									
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+				<!--订单详情 end-->
+			</div>
+
+			<!-- 猜你喜欢部分 -->
+			<div class="guess" style="position: relative;top: 60px;">
+				<p class="guess_title">
+					<span>猜你喜欢</span>
+				</p>
+				<ul class="product_list clearfix">
+					<li class="product_item">
+						<a href="">
+							<img src="../temp/guess01.png" alt="">
+							<p class="active_label">
+								<span>活动促销</span>
+							</p>
+							<p class="describe">苏泊尔 一款容量为1.7L的电水壶的电水壶的电水壶的电水壶</p>
+							<p class="price">
+								<span>￥</span>
+								<span>999.00</span>
+							</p>
+						</a>
+					</li>
+					<li class="product_item">
+						<a href="">
+							<img src="../temp/guess02.png" alt="">
+							<p class="active_label"></p>
+							<p class="describe">FREE ROCKSTUD 小号肩背包</p>
+							<p class="price">
+								<span>￥</span>
+								<span>666.00</span>
+							</p>
+						</a>
+					</li>
+					<li class="product_item">
+						<a href="">
+							<img src="../temp/guess03.png" alt="">
+							<p class="active_label"></p>
+							<p class="describe">踏步机家用静音减肥脚踏机</p>
+							<p class="price">
+								<span>￥</span>
+								<span>888.00</span>
+							</p>
+						</a>
+					</li>
+					<li class="product_item">
+						<a href="">
+							<img src="../temp/guess04.png" alt="">
+							<p class="active_label"></p>
+							<p class="describe">爱仕达 中国红新不粘三件套装锅</p>
+							<p class="price">
+								<span>￥</span>
+								<span>178.00</span>
+							</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 猜你喜欢结束 -->
+		</div>
+		<!--尾部-->
+		<div class="footer mt60">
+			<div class="layout footer_link clearfix">
+				<ul class="footer_col_1">
+					<li>关于我们</li>
+					<li>
+						<a href="">公司简介</a>
+					</li>
+					<li>
+						<a href="">公司简介</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+				</ul>
+				<ul class="footer_col_2">
+					<li>订单服务</li>
+					<li>
+						<a href="">购买指南</a>
+					</li>
+					<li>
+						<a href="">支付方式</a>
+					</li>
+					<li>
+						<a href="">送货政策</a>
+					</li>
+				</ul>
+				<ul class="footer_col_3">
+					<li>关注我们</li>
+					<li>
+						<a href="">新浪微博</a>
+					</li>
+					<li>
+						<a href="">官方微信</a>
+					</li>
+				</ul>
+				<ul class="footer_col_4">
+					<li style="font-size: 24px;">400-996-4866</li>
+					<li>周一至周五 9:00 - 18:00 (仅工作日)</li>
+				</ul>
+				<ul class="footer_col_5">
+					<li>
+						<img src="../static/images/appdown.png" alt="">
+						<p>下载APP</p>
+					</li>
+				</ul>
+			</div>
+			<div class="layout footer_bar">
+				<p>小满精品电子商务（大连）有限公司 &copy;2017-2018 备案号：辽ICP备17017511号-1</p>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="../static/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	//文档高度
+	$(function() {
+		$('body').show();
+
+		$('.order_details').each(function(i) {
+			$H = $('.each_order_left').eq(i).height();
+			$('.each_order_right').eq(i).css('height', $H);
+			$ul_H = $('.each_order_right ul').eq(i).height();
+			$('.each_order_right ul').eq(i).css({
+				'marginTop': $H / 2 - $ul_H + 30,
+			})
+
+			//console.log($('.each_order_left ul').length);
+			$each_order_left_ul=$('.each_order_left').eq(i).find('ul')
+			if($('.each_order_left').eq(i).find('ul').length > 1) {
+				$('.each_order_right').eq(i).css('borderLeft', '1px solid #c6c6c6');
+			}
+		})
+	})
+
+	//倒计时
+	function countdown(t) {
+		var element = t;
+		if(element) {
+			var endTime = new Date(element.data('timer'));
+			var ts = endTime - new Date();
+			//console.log(endTime);
+			if(ts > 0) {
+				var d = parseInt(ts / 1000 / 60 / 60 / 24);
+				var hh = parseInt(ts / (1000 * 60 * 60) % 24, 10);
+				//d = d < 10 ? ("0" + d) : d;
+				hh = hh < 10 ? ("0" + hh) : hh;
+				element.find('.day_h').html('剩余时间:' + d + '天' + hh + '小时');
+				setTimeout(function() {
+					countdown(t);
+				}, 1000);
+			} else {
+				element.find('.day_h').html('剩余时间:0天0小时');
+				element.find('.btn').html('您以收货');
+				element.find('.btn').css('border', 'none');
+				element.find('.btn').attr('href', 'javascript:;');
+			}
+		}
+	}
+</script>
+<script>
+	;
+	(function($, box) {
+		var box = $(box);
+		box.find('.available_one').each(function(i) {
+			countdown($(this));
+		});
+	})(jQuery, '.commodity_details');
+</script>

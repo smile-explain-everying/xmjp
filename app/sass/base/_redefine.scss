@@ -138,11 +138,14 @@ table,tr{
     margin-top:40px;
 }
 .mt60{
-    margin-top:40px;
+    margin-top:100px;
 }
 .fn-rmb{
     font-family:arial;
     font-style:normal;
     padding-right:4px;
 }
-
+::-webkit-input-placeholder{color: #a6a6a6;}   
+:-moz-placeholder{color: #a6a6a6;}                  
+::-moz-placeholder{color: #a6a6a6;}               
+:-ms-input-placeholder{color: #a6a6a6;} 

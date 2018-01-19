@@ -1,8 +1,13 @@
-//活动中心头部banner
+//领券中心
+@charset "UTF-8";
+@import  "helpers/_mixins.scss";
 .content{
     height: 100%;
     width: 100%;
     background-color: #f5f5f5;
+}
+.listbox{
+        margin-bottom: 100px;
 }
 .getticketList{
     width: 1160px;
@@ -17,9 +22,14 @@
         p{
             float: left;
         }
+         
         .left{
             margin-top:20px;
             margin-left:34px;
+            img{
+                width: 130px;
+                height: 130px;
+            }
         }
         .middle{
             width: 200px;
@@ -44,8 +54,19 @@
             width: 87px;
             height: 87px;
             font-size: 14px;
-                text-align: center;  
+                text-align: center; 
+                   strong{
+               float: right;
+                        display: block;
+                        width: 104px;
+                        margin-top: 26px;
+                        text-align: center;
+                        font-size: 14px;
+                        color: red; 
+                  font-weight: normal; 
+            } 
             .getnow{
+                cursor:pointer;
                 display: inline-block;
                 text-align: center;  
                 margin-top:20px;
@@ -56,11 +77,19 @@
                 font-size: 14px;
                 line-height: 30px;
             }
+            .getnow:hover{
+                background-color:  #c79a85;
+            }
         }
     }
 }
 .lodemore{
     text-align: center;
+        a{  
+            color: #333333;
+            font-size:16px;
+        }
+
 }
 
 

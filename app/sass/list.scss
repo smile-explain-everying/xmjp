@@ -1,0 +1,128 @@
+@charset "utf-8";
+@charset "utf-8";
+/*首页index*/
+@import  "helpers/_mixins.scss";                  //常用变量定义
+@import  "components/banner.scss";                  //banner
+%indexlayout {
+	width:1100px;
+	margin:0 auto;
+	padding:0px;
+}
+.content{
+	background-color: #f6f6f6;
+	.list-banner{
+		padding-bottom: 80px;
+		background-color: $whiteColor;
+	}
+	.crumbs{
+		a{
+			line-height: 56px;
+			font-size: 12px;
+			height: 56px;
+			margin-right: 5px;
+			color: $fontColor;
+		}
+		span{
+			font-size: 12px;
+			color: #999999;
+		}
+	}
+	.shop-bd{
+		padding-top: 10px;
+		background-color: $whiteColor;
+		.retrieval{
+			height: 40px;
+			line-height: 40px;
+			background-color: $whiteColor;
+			padding-left: 30px;
+			color: #8b8b8b;
+			a{
+				margin-left: 18px;
+				color: $fontColor;
+				.arrow-top{
+					position: absolute;
+					right: 4px;
+					top:15px;
+					@include arrow-top(5px,#999999);
+				}
+				.arrow-bottom{
+					position: absolute;
+					right: 4px;
+					top:21px;
+					@include arrow-bottom(5px,#999999);
+				}
+			}
+			.retrieval-money{
+				display: inline-block;
+				position: relative;
+				width: 50px;
+				margin-left: 30px;
+			}
+			a.active{
+				color:$activeColor;
+			}
+		}
+		.item-bd-d{
+			padding: 0 30px;
+			margin:-5px 0 0 -12px;
+			li{
+				float: left;
+				overflow: hidden;
+				margin: 25px 0 0 12px;
+				a{
+					.item-pic{
+						width: 250px;
+						height: 250px;
+						overflow: hidden;
+						img{
+							@include transition(all 0.6s);
+						}
+						:hover{
+							@include transform(scale(1.1));
+						}
+					}
+					p{
+					text-align: center;
+					}
+					p.type{
+						margin-top: 8px;
+						height: 24px;
+					}						
+					p.brief{
+						margin-top: 2px;
+						font-size: 14px;
+						color:$fontColor;
+						@extend %fn_text_overflow;
+					}
+					p.money{
+						font-size: 14px;
+						color: #e11a1f;
+						font-weight: bold;
+					}
+				}
+			}
+			:hover{
+				p.brief{
+					color: $activeColor;
+				}
+			}
+		}
+	}
+	.type-new,.type-campaign{
+		padding: 4px 6px;
+		color: $whiteColor;
+		font-size: 12px;
+		display: inline-block;
+	}
+	.type-new{
+		background-color: #f18031;
+	}
+	.type-campaign{
+		background-color: #f15a31;
+		margin-left: 10px;
+	}
+	.list_c{
+		padding-top: 40px;
+	}
+}
+

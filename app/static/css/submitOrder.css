@@ -1,24 +1,24 @@
 @charset "UTF-8";
-.picker, .picker .address li div, .switch_address .switch_box .switch_list li {
+.picker, .picker .address li div, .switch_address .switch_box .switch_list li, .order_submit .title, .order_submit .product .product_box .zx_product {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
 /* 单行文字溢出时出现省略号，需设定宽度 */
-.choice_address #address02 .address li p {
+.content .choice_address .have_address .address li p, .order_submit .product .product_list .list_info .name .name_title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.picker, .picker .address li div, .switch_address .switch_box .switch_list li {
+.picker, .picker .address li div, .switch_address .switch_box .switch_list li, .order_submit .title, .order_submit .product .product_box .zx_product {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
 /* 单行文字溢出时出现省略号，需设定宽度 */
-.choice_address #address02 .address li p {
+.content .choice_address .have_address .address li p, .order_submit .product .product_list .list_info .name .name_title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
@@ -129,23 +129,20 @@
   width: 170px;
   margin: 0 3%; }
 
-.choice_address #address01 {
-  display: none; }
-
-.choice_address #address02 .address {
+.content .choice_address .have_address .address {
   border-right: none; }
-  .choice_address #address02 .address li p {
+  .content .choice_address .have_address .address li p {
     line-height: 30px;
     float: left;
     padding-left: 3%;
     width: 80%; }
 
-.choice_address #address02 .operation {
+.content .choice_address .have_address .operation {
   width: 15%;
   float: right;
   text-align: right;
   margin: 50px 40px 40px 0; }
-  .choice_address #address02 .operation a {
+  .content .choice_address .have_address .operation a {
     display: block;
     width: 140px;
     height: 40px;
@@ -156,10 +153,10 @@
     font-size: 16px;
     color: #333;
     margin-bottom: 20px; }
-    .choice_address #address02 .operation a:hover {
+    .content .choice_address .have_address .operation a:hover {
       background: #fff; }
 
-.edit_address {
+.add_address {
   position: fixed;
   top: 0;
   left: 0;
@@ -167,14 +164,14 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   display: none; }
-  .edit_address .layout {
+  .add_address .layout {
     margin-top: 300px;
     background: #fff; }
-    .edit_address .layout .picker .address select {
+    .add_address .layout .picker .address select {
       width: 160px; }
-    .edit_address .layout .picker .address div.address_info textarea {
+    .add_address .layout .picker .address div.address_info textarea {
       width: 495px; }
-    .edit_address .layout .picker .address li.fn_name .name {
+    .add_address .layout .picker .address li.fn_name .name {
       width: 170px;
       margin: 0 3%; }
 
@@ -238,3 +235,174 @@
       background: url(../images/sprite.png);
       background-position: -23px -403px;
       cursor: pointer; }
+
+#address02 {
+  display: none; }
+
+.order_submit {
+  margin-top: 40px;
+  width: 100%; }
+  .order_submit .title {
+    padding: 0 40px;
+    border: 1px solid #e3e3e3;
+    background: #f6f6f6; }
+    .order_submit .title li {
+      line-height: 40px;
+      color: #999;
+      float: left; }
+    .order_submit .title .info {
+      width: 40%; }
+    .order_submit .title .price {
+      width: 24%; }
+    .order_submit .title .num {
+      width: 24%; }
+    .order_submit .title .count {
+      width: 12%; }
+  .order_submit .product .product_box {
+    width: 100%;
+    margin-bottom: 30px; }
+    .order_submit .product .product_box .shop_name {
+      margin: 30px 0; }
+      .order_submit .product .product_box .shop_name .contact {
+        display: inline-block;
+        padding: 3px 20px;
+        color: #fff;
+        text-align: center;
+        background: #b48b78;
+        margin-left: 30px; }
+    .order_submit .product .product_box .zx_product {
+      padding: 30px 40px 30px;
+      border: 1px solid #e3e3e3; }
+  .order_submit .product .product_list {
+    margin-bottom: 30px; }
+    .order_submit .product .product_list li {
+      float: left; }
+    .order_submit .product .product_list .list_info {
+      width: 40%; }
+      .order_submit .product .product_list .list_info .img_box {
+        width: 110px;
+        height: 110px;
+        float: left; }
+        .order_submit .product .product_list .list_info .img_box img {
+          width: 100%;
+          height: 100%; }
+      .order_submit .product .product_list .list_info .name {
+        float: left;
+        width: 260px;
+        margin: 30px 0 0 20px; }
+        .order_submit .product .product_list .list_info .name .name_title {
+          width: 100%; }
+        .order_submit .product .product_list .list_info .name .spec {
+          font-size: 12px;
+          color: #999;
+          margin-top: 5px; }
+    .order_submit .product .product_list .list_price {
+      width: 24%;
+      line-height: 110px; }
+    .order_submit .product .product_list .list_num {
+      width: 24%; }
+      .order_submit .product .product_list .list_num #calculation {
+        display: inline-block;
+        width: 118px;
+        height: 28px;
+        border: 1px solid #e3e3e3;
+        margin-top: 40px; }
+        .order_submit .product .product_list .list_num #calculation input {
+          width: 50px;
+          height: 24px;
+          text-align: center;
+          line-height: 24px;
+          color: #5e5e5e;
+          border: none;
+          border-left: 1px solid #e3e3e3;
+          border-right: 1px solid #e3e3e3;
+          background: #f6f6f6; }
+        .order_submit .product .product_list .list_num #calculation span {
+          display: inline-block;
+          text-align: center;
+          width: 28px;
+          height: 28px;
+          line-height: 28px;
+          cursor: pointer;
+          font-size: 14px; }
+    .order_submit .product .product_list .list_count {
+      width: 12%;
+      line-height: 110px; }
+  .order_submit .product .remarks {
+    font-size: 12px;
+    color: #999;
+    display: block;
+    padding: 20px 0;
+    border-bottom: 1px solid #e3e3e3; }
+    .order_submit .product .remarks input {
+      border: 1px solid #e3e3e3;
+      width: 300px;
+      height: 30px;
+      margin-left: 20px; }
+    .order_submit .product .remarks .send_type {
+      padding: 0 30px; }
+  .order_submit .product .freight {
+    text-align: right;
+    padding-top: 20px; }
+    .order_submit .product .freight .fr_price {
+      color: #e11a1f; }
+  .order_submit .coupons {
+    padding: 20px 40px;
+    background: #f6f6f6;
+    border: 1px solid #e3e3e3; }
+    .order_submit .coupons .coupons_title {
+      color: #999;
+      padding-bottom: 15px; }
+    .order_submit .coupons .choice_coupons {
+      display: inline-block;
+      width: 130px;
+      height: 40px;
+      background: #b48b78;
+      color: #fff;
+      line-height: 40px;
+      text-align: center; }
+    .order_submit .coupons .cancel_coupons {
+      color: #999;
+      line-height: 40px;
+      padding-left: 10px; }
+  .order_submit .settlement {
+    border: 1px solid #e3e3e3;
+    border-top: none;
+    padding: 30px 40px 40px;
+    background: #f6f6f6; }
+    .order_submit .settlement .style_coupons {
+      width: 75%;
+      min-height: 250px;
+      float: left; }
+    .order_submit .settlement .set_list {
+      width: 25%;
+      float: left; }
+      .order_submit .settlement .set_list p {
+        padding-bottom: 20px; }
+        .order_submit .settlement .set_list p .set_title {
+          display: inline-block;
+          width: 30%;
+          text-align: right; }
+        .order_submit .settlement .set_list p .set_contain {
+          display: inline-block;
+          width: 65%;
+          text-align: right; }
+      .order_submit .settlement .set_list .paid {
+        padding-top: 10px;
+        border-top: 1px solid #e3e3e3; }
+        .order_submit .settlement .set_list .paid .paid_money {
+          font-size: 24px;
+          color: #e11a1f;
+          font-weight: 800; }
+      .order_submit .settlement .set_list .set_submit {
+        text-align: center; }
+        .order_submit .settlement .set_list .set_submit a {
+          display: inline-block;
+          width: 170px;
+          height: 50px;
+          font-size: 20px;
+          background: #b48b78;
+          color: #fff;
+          text-align: center;
+          line-height: 50px;
+          margin: 0 auto; }

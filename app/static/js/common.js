@@ -87,3 +87,30 @@ function layer_show(w,h,title,url){
         content: url
     });
 }
+
+;(function($,ospanTop,ospanBottom){
+    var ospanT = $(ospanTop),
+        ospanB = $(ospanBottom);
+    $(ospanT).on('click',function(event){
+        event.preventDefault();
+        alert('升序');
+    });
+    $(ospanB).on('click',function(event){
+        event.preventDefault();
+        alert('降序');
+    });
+})(jQuery,'.arrow-top','.arrow-bottom');
+
+/*快速登录*/
+;(function($,loginPop,mask){
+    var pop = $(loginPop),
+        mask = $(mask);
+    $(document).click(function(){
+       pop.hide();
+       mask.remove();
+    });
+    pop.click(function(e){
+        e.stopPropagation();
+    });
+})(jQuery,'.login-pop','.mask');
+

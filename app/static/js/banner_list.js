@@ -3,36 +3,7 @@ $(function(){
     var counts = $("#imageMenu li").length;
     var interval = $("#imageMenu li:first").width();
 
-    if(counts<=3){
-        $('.smallImgDown').addClass('disabled');
-    }
     var curIndex = 0;
-
-
-
-    $('.scrollbutton').click(function(){
-
-
-        if( $(this).hasClass('disabled') ) return false;
-
-
-
-        if ($(this).hasClass('smallImgUp')) --curIndex;
-
-
-        else ++curIndex;
-
-        $('.scrollbutton').removeClass('disabled');
-
-        if (curIndex == 0) $('.smallImgUp').addClass('disabled');
-
-        if (curIndex == count-1) $('.smallImgDown').addClass('disabled');
-
-
-
-        $("#imageMenu ul").stop(false, false).animate({"marginLeft" : -curIndex*interval + "px"});
-
-    });
 
     // 解决 ie6 select框 问题
 
@@ -125,6 +96,8 @@ $(function(){
             midChange($(this).attr("src").replace("small", "mid"));
 
             $(this).css({ "border-color": "#ff9c00" });
+            $("#imageMenu li").removeAttr("id");
+            $(this).parent().attr("id", "onlickImg");
 
         }
 

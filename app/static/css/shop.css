@@ -1,8 +1,18 @@
 @charset "UTF-8";
 /*首页index*/
 /* 单行文字溢出时出现省略号，需设定宽度 */
+.content .shop-bd .item-bd-d li a p.brief {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 /*分页共通样式*/
 /* 单行文字溢出时出现省略号，需设定宽度 */
+.content .shop-bd .item-bd-d li a p.brief {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 .banner {
   position: relative;
   height: 410px;
@@ -102,7 +112,7 @@
   padding: 0px; }
 
 .content .shop-hd {
-  padding: 30px 0; }
+  padding: 30px 0 0 0; }
   .content .shop-hd .shop-name {
     position: relative;
     padding: 20px 30px;
@@ -128,18 +138,132 @@
       .content .shop-hd .shop-name a:hover {
         background-color: #c79a85; }
   .content .shop-hd .shop-coupon {
-    padding: 0 32px;
+    padding: 20px 32px 0;
     margin-left: -25px; }
     .content .shop-hd .shop-coupon li {
+      position: relative;
       float: left;
-      margin-left: 25px; }
-      .content .shop-hd .shop-coupon li a {
+      margin-left: 25px;
+      cursor: pointer; }
+      .content .shop-hd .shop-coupon li div {
         display: block;
         width: 240px;
         height: 92px;
+        overflow: hidden;
         background-image: url(../images/sprite.png);
         vertical-align: middle;
         background-position: 0 -345px; }
+        .content .shop-hd .shop-coupon li div .shop-coupon_col-l {
+          font-size: 20px;
+          color: #fff;
+          float: left;
+          display: block;
+          width: 136px;
+          height: 92px;
+          text-align: center;
+          line-height: 92px; }
+        .content .shop-hd .shop-coupon li div .shop-coupon_col-r {
+          float: right;
+          display: block;
+          width: 104px;
+          margin-top: 26px;
+          text-align: center;
+          font-size: 14px;
+          color: #fff; }
+          .content .shop-hd .shop-coupon li div .shop-coupon_col-r .rtime {
+            font-weight: normal; }
+      .content .shop-hd .shop-coupon li .omask {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 240px;
+        height: 92px;
+        line-height: 92px;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 99; }
+    .content .shop-hd .shop-coupon .available_three .shop-coupon_col-r, .content .shop-hd .shop-coupon .received .shop-coupon_col-r {
+      margin-top: 0;
+      line-height: 92px; }
+    .content .shop-hd .shop-coupon .received div {
+      background-position: 0 -436px; }
+
+.content .shop-bd .retrieval {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #d6d6d6;
+  background-color: #f5f5f5;
+  padding-left: 30px;
+  color: #8b8b8b; }
+  .content .shop-bd .retrieval a {
+    margin-left: 18px;
+    color: #333; }
+    .content .shop-bd .retrieval a .arrow-top {
+      position: absolute;
+      right: 4px;
+      top: 15px;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid #999999; }
+    .content .shop-bd .retrieval a .arrow-bottom {
+      position: absolute;
+      right: 4px;
+      top: 21px;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #999999; }
+  .content .shop-bd .retrieval .retrieval-money {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    margin-left: 30px; }
+  .content .shop-bd .retrieval a.active {
+    color: #b48b78; }
+
+.content .shop-bd .item-bd-d {
+  margin: -5px 0 0 -12px; }
+  .content .shop-bd .item-bd-d li {
+    float: left;
+    overflow: hidden;
+    margin: 25px 0 0 12px; }
+    .content .shop-bd .item-bd-d li a .item-pic {
+      width: 266px;
+      height: 266px;
+      overflow: hidden; }
+      .content .shop-bd .item-bd-d li a .item-pic img {
+        -webkit-transition: all 0.6s;
+        -moz-transition: all 0.6s;
+        -o-transition: all 0.6s;
+        transition: all 0.6s; }
+      .content .shop-bd .item-bd-d li a .item-pic :hover {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1); }
+    .content .shop-bd .item-bd-d li a p {
+      text-align: center; }
+    .content .shop-bd .item-bd-d li a p.type {
+      margin-top: 8px;
+      height: 24px; }
+    .content .shop-bd .item-bd-d li a p.brief {
+      margin-top: 2px;
+      font-size: 14px;
+      color: #333; }
+    .content .shop-bd .item-bd-d li a p.money {
+      font-size: 14px;
+      color: #e11a1f;
+      font-weight: bold; }
+  .content .shop-bd .item-bd-d :hover p.brief {
+    color: #b48b78; }
 
 .content .type-new, .content .type-campaign {
   padding: 4px 6px;

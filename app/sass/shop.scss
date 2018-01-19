@@ -10,7 +10,7 @@
 }
 .content{
 	.shop-hd{
-		padding: 30px 0;
+		padding: 30px 0 0 0;
 		.shop-name{
 			position: relative;
 			padding: 20px 30px;
@@ -40,21 +40,151 @@
 			}
 		}
 		.shop-coupon{
-			padding:0 32px;
+			padding:20px 32px 0;
 			margin-left: -25px;
 			li{
+				position: relative;
 				float: left;
 				margin-left: 25px;
-				a{
+				cursor: pointer;
+				div{
 					display: block;
 					width: 240px;
 					height: 92px;
+					overflow: hidden;
 					background-image: url(../images/sprite.png);
 					vertical-align: middle;
 					background-position: 0 -345px;
+					.shop-coupon_col-l{
+						font-size: 20px;
+						color:$whiteColor;
+						float: left;
+						display: block;
+						width: 136px;
+						height: 92px;
+						text-align: center;
+						line-height: 92px;
+
+					}
+					.shop-coupon_col-r{
+						float: right;
+						display: block;
+						width: 104px;
+						margin-top: 26px;
+						text-align: center;
+						font-size: 14px;
+						color: $whiteColor;	
+						.rtime{
+							font-weight: normal;
+						}
+					}
+				}				
+				.omask{
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 240px;
+					height: 92px;
+					line-height: 92px;
+					font-size: 16px;
+					color: $whiteColor;
+					text-align: center;
+					background-color: rgba(0,0,0,.7);
+					z-index: 99;
 				}
 			}
+			.available_three,.received{
+				.shop-coupon_col-r{
+					margin-top: 0;
+					line-height: 92px;
+				}
+			}
+			.received{
+				div{
+					background-position: 0 -436px;
+				}	
+			}
 		}
+	}
+	.shop-bd{
+		.retrieval{
+			height: 40px;
+			line-height: 40px;
+			border: 1px solid #d6d6d6;
+			background-color: #f5f5f5;
+			padding-left: 30px;
+			color: #8b8b8b;
+			a{
+				margin-left: 18px;
+				color: $fontColor;
+				.arrow-top{
+					position: absolute;
+					right: 4px;
+					top:15px;
+					@include arrow-top(5px,#999999);
+				}
+				.arrow-bottom{
+					position: absolute;
+					right: 4px;
+					top:21px;
+					@include arrow-bottom(5px,#999999);
+				}
+			}
+			.retrieval-money{
+				display: inline-block;
+				position: relative;
+				width: 50px;
+				margin-left: 30px;
+			}
+			a.active{
+				color:$activeColor;
+			}
+		}
+		.item-bd-d{
+					margin:-5px 0 0 -12px;
+					li{
+						float: left;
+						overflow: hidden;
+						margin: 25px 0 0 12px;
+						a{
+							.item-pic{
+								width: 266px;
+								height: 266px;
+								overflow: hidden;
+								img{
+									@include transition(all 0.6s);
+								}
+								:hover{
+									@include transform(scale(1.1));
+								}
+							}
+							p{
+							text-align: center;
+							}
+							p.type{
+								margin-top: 8px;
+								height: 24px;
+							}						
+							p.brief{
+								margin-top: 2px;
+								font-size: 14px;
+								color:$fontColor;
+								@extend %fn_text_overflow;
+							}
+							p.money{
+								font-size: 14px;
+								color: #e11a1f;
+								font-weight: bold;
+							}
+						}
+					}
+					:hover{
+						p.brief{
+							color: $activeColor;
+						}
+					}
+				}
 	}
 	.type-new,.type-campaign{
 		padding: 4px 6px;

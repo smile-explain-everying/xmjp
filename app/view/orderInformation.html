@@ -17,12 +17,10 @@
     <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="../static/touch-icon-ipad-144.png" />
     <link rel="stylesheet" href="../static/css/main.css">
     <link rel="stylesheet" href="../static/css/orderInformation.css">
-    <!-- <link rel="stylesheet" href="../static/css/webuploader.css"> -->
+    <link rel="stylesheet" href="../static/css/webuploader.css">
     <!--[if lt IE 9]>
 	<script src="../static/js/html5.js"></script>
 	<![endif]-->
-</head>
-
 <body>
 
     <!--头部开始-->
@@ -153,12 +151,17 @@
                 <p class="order_data">
                     <span class="data">
                         <span>下单时间：</span>
-                    <span>2017-12-18 13:41:33</span>
+                        <span>2017-12-18 13:41:33</span>
                     </span>
                     <span class="code">
                         <span>订单编号：</span>
-                    <span>aAAAASDA58998</span>
+                        <span>aAAAASDA58998</span>
                     </span>
+                    <span class="shop">
+                            <span>店铺名称：</span>
+                            <span>aAAAASDA58998</span>
+                        </span>
+                    <a href="" class="contact">联系店长</a>
                 </p>
                 <ul class="product clearfix">
                     <li class="product_img">
@@ -301,12 +304,13 @@
                     <textarea name="" id="" placeholder="谈谈您对商品的感想"></textarea>
                 </p>
                 <p class="add_img">
-                    <a href="javascript:;" class="add">添加图片</a>
-                    <span class="img_box">
-                        <a href="">
-                            <img src="" alt="">
-                        </a>
-                    </span>
+                    <div id="uploader-demo">
+                        <div>
+                            <div id="filePicker">添加图片 </div>
+                        </div>
+                        <!--用来存放item-->
+                        <div id="thelist" class="uploader-list clearfix"></div>
+                    </div>
                 </p>
                 <p class="publish">
                     <a href="javascript:;">发表评论</a>
@@ -314,14 +318,14 @@
             </div>
         </div>
     </div>
-     <!-- 猜你喜欢部分 -->
-     <div class="guess">
-            <p class="guess_title">
-                <span>猜你喜欢</span>
-            </p>
-            <ul class="product_list clearfix">
-                <li class="product_item">
-                    <a href="">
+    <!-- 猜你喜欢部分 -->
+    <div class="guess">
+        <p class="guess_title">
+            <span>猜你喜欢</span>
+        </p>
+        <ul class="product_list clearfix">
+            <li class="product_item">
+                <a href="">
                         <img src="../temp/guess01.png" alt="">
                          <p class="active_label">
                              <span>活动促销</span>
@@ -332,9 +336,9 @@
                             <span>999.00</span>
                         </p>
                     </a>
-                </li>
-                <li class="product_item">
-                    <a href="">
+            </li>
+            <li class="product_item">
+                <a href="">
                         <img src="../temp/guess02.png" alt="">
                         <p class="active_label"></p>
                         <p class="describe">FREE ROCKSTUD 小号肩背包</p>  
@@ -343,9 +347,9 @@
                             <span>666.00</span>
                         </p>
                     </a>
-                </li>
-                <li class="product_item">
-                    <a href="">
+            </li>
+            <li class="product_item">
+                <a href="">
                         <img src="../temp/guess03.png" alt="">
                         <p class="active_label"></p>
                         <p class="describe">踏步机家用静音减肥脚踏机</p>  
@@ -354,9 +358,9 @@
                             <span>888.00</span>
                         </p>
                     </a>
-                </li>
-                <li class="product_item">
-                    <a href="">
+            </li>
+            <li class="product_item">
+                <a href="">
                         <img src="../temp/guess04.png" alt="">
                         <p class="active_label"></p>
                         <p class="describe">爱仕达 中国红新不粘三件套装锅</p>  
@@ -365,12 +369,72 @@
                             <span>178.00</span>
                         </p>
                     </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 猜你喜欢结束 -->
+    <!-- 页脚 -->
+    <div class="footer mt60">
+        <div class="layout footer_link clearfix">
+            <ul class="footer_col_1">
+                <li>关于我们</li>
+                <li><a href="">公司简介</a></li>
+                <li><a href="">公司简介</a></li>
+                <li><a href="">联系我们</a></li>
+            </ul>
+            <ul class="footer_col_2">
+                <li>订单服务</li>
+                <li><a href="">购买指南</a></li>
+                <li><a href="">支付方式</a></li>
+                <li><a href="">送货政策</a></li>
+            </ul>
+            <ul class="footer_col_3">
+                <li>关注我们</li>
+                <li><a href="">新浪微博</a></li>
+                <li><a href="">官方微信</a></li>
+            </ul>
+            <ul class="footer_col_4">
+                <li style="font-size: 24px;">400-996-4866</li>
+                <li>周一至周五 9:00 - 18:00 (仅工作日)</li>
+            </ul>
+            <ul class="footer_col_5">
+                <li>
+                    <img src="../static/images/appdown.png" alt="">
+                    <p>下载APP</p>
                 </li>
             </ul>
         </div>
-        <!-- 猜你喜欢结束 -->
+        <div class="layout footer_bar">
+            <p>小满精品电子商务（大连）有限公司 &copy;2017-2018 备案号：辽ICP备17017511号-1</p>
+        </div>
+    </div>
+    <!-- 右侧导航 -->
+    <div class="nav_sidebar_right">
+        <ul>
+            <li><a href="" class="contact"></a></li>
+            <li><a href="" class="weixin"></a></li>
+            <li><a href="" class="weibo"></a></li>
+            <li><a href="" class="backtop"></a></li>
+        </ul>
+    </div>
     <script type="text/javascript" src="../static/js/jquery.min.js"></script>
-    <!-- <script type="text/javascript" src="../static/js/webuploader.min.js"></script> -->
+    <script type="text/javascript" src="../static/js/webuploader.min.js"></script>
+    <script type="text/javascript" src="../static/js/webuploader.js"></script>
 </body>
+<script>
+    $(function () {
+
+        // 评价满意度
+        $('.evaluate').find('.start').on('click', 'span', function () {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active')
+            } else {
+                $(this).addClass('active')
+            }
+        });
+
+    });
+
+</script>
 
 </html>

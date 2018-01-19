@@ -1,0 +1,245 @@
+//活动中心头部banner
+@charset "UTF-8";
+@import  "helpers/_mixins.scss";
+@import  "components/_personalCenterLeftNav.scss";
+
+//添加头部导航下划线
+.nav{
+    border-bottom: 1px solid #e3e3e3;
+}
+.content_right{
+    float: left;
+    width: 908px;
+    margin-left: 30px;
+    padding-bottom:30px;
+    .titlebox{
+      border: 1px solid #e3e3e3;  
+    }
+    .rfmoney{
+        margin-top: 40px;
+
+    }
+    .uploadimg{
+        margin-top: 20px;
+       width:908px;
+//      min-height: 320px; 
+      border: 1px solid #e3e3e3; 
+        .rfhead{
+            margin-top: 20px;
+            margin-left: 40px;
+            //  退款理由
+            .tl{
+                font-size: 14px;
+            }
+            //退款说明
+            .hint{
+                font-size: 12px;
+                color:#999999;
+            }
+        }
+        .rfcontent{
+            .txar{
+                display: none;
+                margin-top: 30px;
+                margin-left: 113px;
+               resize:none;
+               overflow-x:hidden;
+               width: 498px;
+               height: 138px;
+            }
+        }        
+    }
+    .goodsmsg{
+        width:908px;
+        height: 56px;
+        background-color: #f6f6f6;
+        line-height: 56px;
+        font-size: 12px;
+        color: #333333;
+        .firstspan{
+            margin-left: 40px;
+        }
+        .thirdspan{
+              margin-left: 90px;
+        }
+    }
+//  订单条信息
+    .refundgoods{
+             color: #333333;
+            margin-top: 20px;
+            width:910px;
+            height:150px;
+            div{
+                float: left;
+            }
+        .clImg{
+                width: 110px;
+                height: 110px;
+                margin-left:39px;
+                margin-top:19px;
+            }
+            .text{
+                width: 203px;
+                height: auto;
+                margin-left:20px;
+                margin-top:55px;
+                font-size: 14px;
+                line-height: 14px;
+                   a{
+                       color: #333333;
+                   }
+                   a:hover{
+                     color: #b48b78;
+                 }
+                .size{
+                    font-size: 12px;
+                    color: #999999;
+                }
+                
+            }
+            .price{
+                    width:90px ;
+                    margin-left:110px;
+                    margin-top:55px;
+                }
+            .state{
+                    width:90px ;
+                    margin-left:75px;
+                    margin-top:55px;
+                }    
+           .details{ 
+                    
+                    margin-left:40px;
+                    margin-top:45px;
+                    a{
+                        color: #333333;
+                    }
+                    a:hover{
+                        color: #5f8ce3;
+                    }
+           }
+    }
+//  申请维权
+    .rftext{
+      width:908px;
+      margin-top: 20px;
+      border: 1px solid #e3e3e3;
+      .txleft{
+          margin-left: 40px;
+          width: 320px;
+          height: 240px;
+          font-size: 14px;
+          float: left;
+          
+          .txbox{
+              .p1{
+                  width: 70px;
+              }
+              .p2{
+				  max-height: 99px;
+                  line-height: 20px;
+                  *width:240px;
+                  width: 240px;
+                  overflow : hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 5;
+                  -webkit-box-orient: vertical;
+                  white-space: normal;
+                  text-overflow: -o-ellipsis-lastline;
+                  -o-text-overflow:ellipsis; 
+              }
+                p{  
+      
+                    float: left;
+                }
+          }
+      }
+      .txright{
+          float: left;
+          margin-left: 100px;
+          width: 400px;
+          p{
+              margin-top: 15px;
+          }
+          div{
+              line-height: 14px;
+              height: 14px;
+              margin-top: 30px;
+          }
+          .wqBtn{
+              width: 140px;
+              height: 40px;
+             text-align: center;
+              
+              background-color: #b48b78;
+              a{   
+                  display: inline-block;
+                  font-size: 16px;
+                  line-height:40px ;
+                  width: 140px;
+                  height: 40px; 
+                  color: #ffffff;
+              }
+          }
+          .wqBtn:hover{
+              background-color:#c79a85;
+          }
+      }
+      .showrfimg{
+          margin-top: 14px;
+          margin-bottom: 19px;
+          margin-left: 113px;
+          width: 580px;
+          height: 80px;
+          img{
+              border: 1px solid #e3e3e3;
+              width: 108px;
+              height: 80px;
+              margin-right: 20px;
+          }
+      }
+    }
+}
+
+//百度上传样式
+#filePicker{
+    width: 80px;
+    height: 30px;
+    margin-left: 113px;
+    margin-top: 10px;
+}
+
+#thelist{
+    margin-left: 113px;
+    margin-top: 10px;
+}
+.info{
+    width:100px;
+    overflow: hidden;
+//  display: none;
+}
+//提交按钮
+#ctlBtn{
+    margin-top: 40px;
+    margin-left: 113px;
+    width: 140px;
+    height: 40px;
+    background-color: #b48b78;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+#ctlBtn:hover{
+    background-color: #c79a85;;
+}
+#uploader-demo{
+    margin-bottom: 19px;
+}
+
+.thumbnail{
+    margin-right: 20px;
+    display: inline-block;
+}
+

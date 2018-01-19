@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit" />
+		<meta name="viewport" content="width=1100,initial-scale=1,maximum-scale=1,user-scalable=yes">
+
+		<link rel="Shortcut Icon" href="../static/favicon.ico">
+		<!-- Standard iPad -->
+		<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="../static/touch-icon-ipad-144.png" />
+		<!-- Retina iPad -->
+		<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="../static/touch-icon-ipad-144.png" />
+		<link rel="stylesheet" href="../static/css/main.css">
+		<link rel="stylesheet" href="../static/css/shoppingCart.css">
+		<!--[if lt IE 9]>
+	<script src="../static/js/html5.js"></script>
+	<![endif]-->
+	</head>
+
+	<body>
+		<!--头部-->
+		<header class="header">
+			<div class="topbar">
+				<div class="layout">
+					<div class="bar_left">
+						<ul>
+							<li><span style="color: #fff;">畅想品质生活</span></li>
+							<li style="margin-left: 40px;"><span>客服电话：400-996-4866</span></li>
+							<li class="WeChat">
+								<i></i>
+								<div>
+									<span><em></em></span>
+									<img src="../static/images/WeChat.jpg">
+									<p>扫一扫加微信</p>
+								</div>
+							</li>
+							<li class="weibo">
+								<a href=""><i></i></a>
+								<!-- <div>
+								<span><em></em></span>
+								<img src="../static/images/weibo.png">
+								<p>扫一扫加微博</p>
+							</div> -->
+							</li>
+						</ul>
+					</div>
+					<div class="bar_right" style="display: none" ;>
+						<a href="">登录</a>&nbsp;&nbsp;
+						<a href="">注册</a>&nbsp;&nbsp;|&nbsp;
+						<a href="">我的订单</a>&nbsp;&nbsp;|
+						<a href="">下载APP</a>
+					</div>
+					<!-- 登陆后显示 -->
+					<div class="bar_right">
+						<span>欢迎您</span>
+						<a href="">boss，</a>
+						<a href="javascript:;">退出</a>&nbsp;&nbsp;|
+						<a href="">我的订单</a>&nbsp;&nbsp;|
+						<a href="">下载APP</a>
+
+					</div>
+
+				</div>
+			</div>
+			<!-- topbar-end -->
+			<div class="logo">
+				<div class="layout">
+					<div class="logo_left">
+						<!-- logo size 200px*70px -->
+						<a href="" class="logoimg">
+							<img src="../static/images/login_log.png" alt="">
+						</a>
+					</div>
+					<div class="logo_right">
+						<div class="search">
+							<input type="text" placeholder="黑龙江顶级黑木耳">
+							<a href="" class=""></a>
+						</div>
+						<div class="shopping-cart">
+							<a href="">
+								<span class="badge">12</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="nav">
+				<div class="layout">
+					<ul class="">
+						<li>
+							<a href="" class="active">首页</a>
+						</li>
+						<li>
+							<a href="">进口食品</a>
+						</li>
+						<li>
+							<a href="">小家电</a>
+						</li>
+						<li>
+							<a href="">养生精品</a>
+						</li>
+						<li>
+							<a href="">精品农业</a>
+						</li>
+						<li>
+							<a href="">茶叶</a>
+						</li>
+						<li>
+							<a href="">户外运动</a>
+						</li>
+						<li>
+							<a href="">厨房电器</a>
+						</li>
+						<li>
+							<a href="">锅具</a>
+						</li>
+						<li>
+							<a href="">生活电器</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--内容-->
+		<div class="content">
+			<section class="cartMain">
+				<div class="cartMain_hd">
+					<ul class="order_lists cartTop">
+						<li class="list_chk">
+							<!--所有商品全选-->
+							<input type="checkbox" id="all" class="whole_check">
+							<label for="all"></label>
+						</li>
+						<li>全选</li>
+						<li class="list_con">商品信息</li>
+						<li class="list_info">单价</li>
+						<li class="list_price">数量</li>
+						<li class="list_amount">小计</li>
+						<li class="list_sum">操作</li>
+					</ul>
+				</div>
+
+				<div class="cartBox">
+					<div class="shop_info">
+						<div class="all_check">
+							<!--店铺全选-->
+							<input type="checkbox" id="shop_a" class="shopChoice">
+							<label for="shop_a" class="shop"></label>
+						</div>
+						<div class="shop_name">
+							苏泊尔专卖店
+						</div>
+					</div>
+					<div class="order_content">
+						<ul class="order_lists content_order_lists">
+							<li class="list_chk">
+								<input type="checkbox" id="checkbox_1" class="son_check">
+								<label for="checkbox_1"></label>
+							</li>
+							<li class="list_con">
+								<div class="list_img">
+									<img src="../static/images/hu.png" />
+								</div>
+								<div class="list_text">
+									苏泊尔 一款容量为1.7L的电水壶
+									<p>1.7L</p>
+								</div>
+							</li>
+
+							<li class="list_price" style="margin-left: 100px;">
+								<p class="price">¥<span>3211.24</span></p>
+							</li>
+							<li class="list_amount" style="margin-left: 70px;">
+								<div class="amount_box">
+									<a href="javascript:;" class="reduce reSty">-</a>
+									<input type="text" value="1" class="sum">
+									<a href="javascript:;" class="plus">+</a>
+								</div>
+							</li>
+							<li class="list_sum" style="margin-left: 150px;">
+								<p class="sum_price">¥3211.24</p>
+							</li>
+							<li class="list_op">
+								<p class="del">
+									<a href="javascript:;" class="delBtn">删除</a>
+								</p>
+							</li>
+						</ul>
+
+						<ul class="order_lists content_order_lists">
+							<li class="list_chk">
+								<input type="checkbox" id="checkbox_2" class="son_check">
+								<label for="checkbox_2"></label>
+							</li>
+							<li class="list_con">
+								<div class="list_img">
+									<img src="../static/images/hu.png" />
+								</div>
+								<div class="list_text">
+									爱国者导弹
+									<p>1.7L</p>
+								</div>
+							</li>
+
+							<li class="list_price" style="margin-left: 100px;">
+								<p class="price">¥<span>1233.15</span></p>
+							</li>
+							<li class="list_amount" style="margin-left: 70px;">
+								<div class="amount_box">
+									<a href="javascript:;" class="reduce reSty">-</a>
+									<input type="text" value="1" class="sum">
+									<a href="javascript:;" class="plus">+</a>
+								</div>
+							</li>
+							<li class="list_sum" style="margin-left: 150px;">
+								<p class="sum_price">¥1233.15</p>
+							</li>
+							<li class="list_op">
+								<p class="del">
+									<a href="javascript:;" class="delBtn">删除</a>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="cartBox">
+					<div class="shop_info">
+						<div class="all_check">
+							<!--店铺全选-->
+							<input type="checkbox" id="shop_b" class="shopChoice">
+							<label for="shop_b" class="shop"></label>
+						</div>
+						<div class="shop_name">
+							苏泊尔专卖店
+						</div>
+					</div>
+					<div class="order_content">
+						<ul class="order_lists content_order_lists">
+							<li class="list_chk">
+								<input type="checkbox" id="checkbox2_1" class="son_check">
+								<label for="checkbox2_1"></label>
+							</li>
+							<li class="list_con">
+								<div class="list_img">
+									<img src="../static/images/hu.png" />
+								</div>
+								<div class="list_text">
+									飞行堡垒
+									<p>1.7L</p>
+								</div>
+							</li>
+
+							<li class="list_price" style="margin-left:100px;">
+								<p class="price">¥<span>2699.70</span></p>
+							</li>
+							<li class="list_amount" style="margin-left: 70px;">
+								<div class="amount_box">
+									<a href="javascript:;" class="reduce reSty">-</a>
+									<input type="text" value="1" class="sum">
+									<a href="javascript:;" class="plus">+</a>
+								</div>
+							</li>
+							<li class="list_sum" style="margin-left: 150px;">
+								<p class="sum_price">¥2699.70</p>
+							</li>
+							<li class="list_op">
+								<p class="del">
+									<a href="javascript:;" class="delBtn">删除</a>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--底部-->
+				<div class="bar-wrapper">
+					<div class="bar-right">
+						<div class="selected">
+							<input type="checkbox" id="sop_all">
+							<label for="sop_all"></label>
+						</div>
+						<div class="piece">已选(<span class="piece_num">0</span>)</div>
+						<div class="del_commodity">删除选中商品</div>
+						<div class="totalMoney">应付金额： <strong class="total_text"><span>¥</span>0.00</strong></div>
+						<div class="calBtn">
+							<a href="javascript:;">结算</a>
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<section class="model_bg"></section>
+			<section class="my_model">
+				<p class="title">删除商品<span class="closeModel">X</span></p>
+				<p>您确认要删除该商品吗？</p>
+				<div class="opBtn">
+					<a href="javascript:;" class="dialog-sure">确定</a>
+					<a href="javascript:;" class="dialog-close">关闭</a>
+				</div>
+			</section>
+
+			<!-- 猜你喜欢部分 -->
+			<div class="guess">
+				<p class="guess_title">
+					<span>猜你喜欢</span>
+				</p>
+				<ul class="product_list clearfix">
+					<li class="product_item">
+						<a href="">
+							<img src="../temp/guess01.png" alt="">
+							<p class="active_label">
+								<span>活动促销</span>
+							</p>
+							<p class="describe">苏泊尔 一款容量为1.7L的电水壶的电水壶的电水壶的电水壶</p>
+							<p class="price">
+								<span>￥</span>
+								<span>999.00</span>
+							</p>
+						</a>
+					</li>
+					<li class="product_item">
+						<a href="">
+							<img src="../temp/guess02.png" alt="">
+							<p class="active_label"></p>
+							<p class="describe">FREE ROCKSTUD 小号肩背包</p>
+							<p class="price">
+								<span>￥</span>
+								<span>666.00</span>
+							</p>
+						</a>
+					</li>
+					<li class="product_item">
+						<a href="">
+							<img src="../temp/guess03.png" alt="">
+							<p class="active_label"></p>
+							<p class="describe">踏步机家用静音减肥脚踏机</p>
+							<p class="price">
+								<span>￥</span>
+								<span>888.00</span>
+							</p>
+						</a>
+					</li>
+					<li class="product_item">
+						<a href="">
+							<img src="../temp/guess04.png" alt="">
+							<p class="active_label"></p>
+							<p class="describe">爱仕达 中国红新不粘三件套装锅</p>
+							<p class="price">
+								<span>￥</span>
+								<span>178.00</span>
+							</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 猜你喜欢结束 -->
+		</div>
+		<!--尾部-->
+		<div class="footer mt60">
+			<div class="layout footer_link clearfix">
+				<ul class="footer_col_1">
+					<li>关于我们</li>
+					<li>
+						<a href="">公司简介</a>
+					</li>
+					<li>
+						<a href="">公司简介</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+				</ul>
+				<ul class="footer_col_2">
+					<li>订单服务</li>
+					<li>
+						<a href="">购买指南</a>
+					</li>
+					<li>
+						<a href="">支付方式</a>
+					</li>
+					<li>
+						<a href="">送货政策</a>
+					</li>
+				</ul>
+				<ul class="footer_col_3">
+					<li>关注我们</li>
+					<li>
+						<a href="">新浪微博</a>
+					</li>
+					<li>
+						<a href="">官方微信</a>
+					</li>
+				</ul>
+				<ul class="footer_col_4">
+					<li style="font-size: 24px;">400-996-4866</li>
+					<li>周一至周五 9:00 - 18:00 (仅工作日)</li>
+				</ul>
+				<ul class="footer_col_5">
+					<li>
+						<img src="../static/images/appdown.png" alt="">
+						<p>下载APP</p>
+					</li>
+				</ul>
+			</div>
+			<div class="layout footer_bar">
+				<p>小满精品电子商务（大连）有限公司 &copy;2017-2018 备案号：辽ICP备17017511号-1</p>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/js/shoppingCart.js" type="text/javascript" charset="utf-8"></script>
+
+<!--<script type="text/javascript">
+	window.onload = function() {
+		document.onkeydown = function() {
+			var e = window.event || arguments[0];
+			//屏蔽F12
+			if(e.keyCode == 123) {
+
+				return false;
+				//屏蔽Ctrl+Shift+I
+			} else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+
+				return false;
+				//屏蔽Shift+F10
+			} else if((e.shiftKey) && (e.keyCode == 121)) {
+				return false;
+			}
+		};
+		//屏蔽右键单击
+		document.oncontextmenu = function() {
+			return false;
+		}
+	}
+</script>-->

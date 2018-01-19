@@ -1,0 +1,210 @@
+//我的优惠券
+@charset "UTF-8";
+@import  "helpers/_mixins.scss";
+@import  "components/_personalCenterLeftNav.scss";
+
+//添加头部导航下划线
+.nav{
+    border-bottom: 1px solid #e3e3e3;
+}
+.content_right{
+    float: left;
+    width: 908px;
+    min-height: 410px;
+    margin-left: 30px;
+    padding-bottom:30px;
+      border-left: 1px solid #e3e3e3;
+      border-right: 1px solid #e3e3e3;
+      border-bottom: 1px solid #e3e3e3;
+    .myCoupon{
+      height: 40px;
+
+    }
+    .box {
+        height: 100%;
+        margin:10px;
+        display:none
+    }
+}
+
+//tap切换  a标签为 可使用  已使用 已失效
+#select{
+    height: 40px;
+    float: left;
+    div{
+        a{
+            font-size: 14px;
+            color: #333333 ;
+        }
+        float: left;
+
+    }
+    .other{
+        border-bottom: 1px solid #e3e3e3;
+        border-top: 1px solid #e3e3e3;
+        border-right: 1px solid #e3e3e3;
+        float: left;
+        background-color: #f6f6f6;
+        width: 158px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+    }
+}
+.goticket{
+        float: left;
+        border-bottom: 1px solid #e3e3e3;
+        border-top: 1px solid #e3e3e3;
+        width: 430px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #f6f6f6;
+        p{  
+            background-color: #e34039;
+            width: 80px;
+            height: 24px; 
+            text-align: center;
+            line-height: 24px;
+            float: right;
+            margin-top: 8px;
+            margin-right: 10px;
+            a{
+             width: 80px;
+            height: 24px;    
+            color: #FFFFFF;
+            font-size: 12px;
+            display: inline-block;
+             } 
+        }
+         p:hover{
+             background-color: #e3544f;
+         }
+        
+}
+.now{
+  border-right: 1px solid #e3e3e3;
+  border-top: 2px solid #b48b78; 
+  display: inline-block;
+  background-color: #ffffff;
+    width: 158px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px; 
+}
+
+
+.ticketList{
+        height:500px ;
+        margin-top: 30px;
+        margin-left: 40px;
+
+            li{
+             float: left;
+             margin-bottom: 20px;   
+             margin-right: 28px;
+            }
+        .abled{
+            width: 239px;
+            height: 90px;
+            background-image: url('/static/tempimages/myticketablebg01.jpg');
+            .left{
+                float: left;
+                .cut{
+                    font-size: 36px;
+                    color: #ffffff;
+                    margin-left: 25px;
+                    margin-top: 16px;
+                }
+            }
+            .right{
+                float: left;
+                margin-left: 22px;
+                margin-top: 16px;
+                p{
+                    font-size: 12px;
+                    color: #ffffff;
+                }
+                .whereuse{
+                    margin-top: 7px;
+                    width: 110px;
+                    font-size: 12px;
+                    height: 20px;
+                    text-align: center;
+                    border-radius: 10px; 
+                    background-color: #a8120b;
+                }
+            }
+        }
+//      已使用
+         .employ{
+            width: 239px;
+            height: 90px;
+            background-image: url('/static/tempimages/myticketemploybg01.jpg');
+            .left{
+                float: left;
+                .cut{
+                    font-size: 36px;
+                    color: #ffffff;
+                    margin-left: 25px;
+                    margin-top: 16px;
+                }
+            }
+            .right{
+                float: left;
+                margin-left: 22px;
+                margin-top: 16px;
+                p{
+                    font-size: 12px;
+                    color: #ffffff;
+                }
+                .whereuse{
+                    margin-top: 7px;
+                    width: 110px;
+                    font-size: 12px;
+                    height: 20px;
+                    text-align: center;
+                    border-radius: 10px; 
+                    background-color: #a6a6a6;
+                }
+            }
+        }
+        .expired{
+             width: 239px;
+            height: 90px;
+            background-image: url('/static/tempimages/myticketemploybg01.jpg');
+            .left{
+                float: left;
+                .cut{
+                    font-size: 36px;
+                    color: #ffffff;
+                    margin-left: 25px;
+                    margin-top: 16px;
+                }
+            }
+            .right{
+                float: left;
+                margin-left: 22px;
+                margin-top: 16px;
+                p{
+                    font-size: 12px;
+                    color: #ffffff;
+                }
+                .whereuse{
+                    margin-top: 7px;
+                    width: 110px;
+                    font-size: 12px;
+                    height: 20px;
+                    text-align: center;
+                    border-radius: 10px; 
+                    background-color: #a6a6a6;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<title>支付成功</title>
@@ -8,22 +9,23 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="renderer" content="webkit" />
 	<meta name="viewport" content="width=1100,initial-scale=1,maximum-scale=1,user-scalable=yes">
-	
+
 	<link rel="Shortcut Icon" href="../static/favicon.ico">
-	<!-- Standard iPad -->  
-	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="../static/touch-icon-ipad-144.png" />  
-	<!-- Retina iPad -->  
-	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="../static/touch-icon-ipad-144.png" /> 
+	<!-- Standard iPad -->
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="../static/touch-icon-ipad-144.png" />
+	<!-- Retina iPad -->
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="../static/touch-icon-ipad-144.png" />
 
 	<!--[if lt IE 9]>
 	<script src="../static/js/html5.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="../static/css/main.css">
+	<link rel="stylesheet" href="../static/css/main.css">
 	<link rel="stylesheet" href="../static/css/pay.css">
-</head> 
+</head>
+
 <body>
-    <!-- 头部开始 -->
-    	<header class="header"> 
+	<!-- 头部开始 -->
+	<header class="header">
 		<!-- topbar -->
 		<div class="topbar">
 			<div class="layout">
@@ -40,7 +42,7 @@
 							</div>
 						</li>
 						<li class="weibo">
-							<a href=""><i></i></a>		
+							<a href=""><i></i></a>
 							<!-- <div>
 								<span><em></em></span>
 								<img src="../static/images/weibo.png">
@@ -49,7 +51,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="bar_right"  style="display: none;">
+				<div class="bar_right" style="display: none;">
 					<a href="">登录</a>&nbsp;&nbsp;
 					<a href="">注册&nbsp;&nbsp;|&nbsp;</a>
 					<a href="">我的订单</a>&nbsp;&nbsp;|
@@ -57,11 +59,11 @@
 				</div>
 				<!-- 登陆后显示 -->
 				<div class="bar_right">
-					<span>欢迎您</span><a href="">boss，</a> 
+					<span>欢迎您</span><a href="">boss，</a>
 					<a href="javascript:;">退出</a>&nbsp;&nbsp;|
 					<a href="">我的订单</a>&nbsp;&nbsp;|
 					<a href="">下载APP</a>
- 
+
 				</div>
 			</div>
 		</div>
@@ -76,7 +78,7 @@
 					</a>
 				</div>
 				<div class="logo_right">
-					<div class="search" >
+					<div class="search">
 						<input type="text" placeholder="黑龙江顶级黑木耳">
 						<a href="" class=""></a>
 					</div>
@@ -109,38 +111,82 @@
 		<!-- nav-end -->
 	</header>
 	<!-- 头部结束 -->
-    <!-- 内容区域 -->
-    <div class="content layout">
+	<!-- 内容区域 -->
+	<div class="content layout">
 		<div class="wechat_pay">
-            <div class="wechat_info">
-                <p class="notice">请及时付款，以便订单尽快处理！</p>
-                <p class="info">
-                    <span>交易号：</span>
-                    <span>1234564789716513135135113513513513</span>
-                </p>
-                <p class="info">
-                    <span>请在29分钟内付款，否则交易会被取消！</span>
-                    <span class="price_info">
+			<div class="wechat_info">
+				<p class="notice">请及时付款，以便订单尽快处理！</p>
+				<p class="info">
+					<span>交易号：</span>
+					<span>1234564789716513135135113513513513</span>
+				</p>
+				<p class="info">
+					<span>请在29分钟内付款，否则交易会被取消！</span>
+					<span class="price_info">
                         <span class="name">实付：</span>
-                        <span class="price">￥2699.00</span>
-                    </span>
-                </p>
-            </div>
-            <div class="wechat_img clearfix">
-                <div class="code">
-                    <img src="../static/images/code.jpg" alt="">
-                    <span>微信扫一扫支付</span>
-                </div>
-                <div class="phone">
-                    <img src="../static/images/phone.jpg" alt="">
-                </div>
-            </div>
-            <p class="other">
-                <a href="">选择其他付款方式>></a>
-            </p>
-        </div>
-    </div>
-    
-    <!-- 内容区域结束 -->
+					<span class="price">￥2699.00</span>
+					</span>
+				</p>
+			</div>
+			<div class="wechat_img clearfix">
+				<div class="code">
+					<img src="../static/images/code.jpg" alt="">
+					<span>微信扫一扫支付</span>
+				</div>
+				<div class="phone">
+					<img src="../static/images/phone.jpg" alt="">
+				</div>
+			</div>
+			<p class="other">
+				<a href="">选择其他付款方式>></a>
+			</p>
+		</div>
+	</div>
+	<!-- 内容区域结束 -->
+	<!-- 页脚 -->
+	<div class="footer mt60">
+		<div class="layout footer_link clearfix">
+			<ul class="footer_col_1">
+				<li>关于我们</li>
+				<li><a href="">公司简介</a></li>
+				<li><a href="">公司简介</a></li>
+				<li><a href="">联系我们</a></li>
+			</ul>
+			<ul class="footer_col_2">
+				<li>订单服务</li>
+				<li><a href="">购买指南</a></li>
+				<li><a href="">支付方式</a></li>
+				<li><a href="">送货政策</a></li>
+			</ul>
+			<ul class="footer_col_3">
+				<li>关注我们</li>
+				<li><a href="">新浪微博</a></li>
+				<li><a href="">官方微信</a></li>
+			</ul>
+			<ul class="footer_col_4">
+				<li style="font-size: 24px;">400-996-4866</li>
+				<li>周一至周五 9:00 - 18:00 (仅工作日)</li>
+			</ul>
+			<ul class="footer_col_5">
+				<li>
+					<img src="../static/images/appdown.png" alt="">
+					<p>下载APP</p>
+				</li>
+			</ul>
+		</div>
+		<div class="layout footer_bar">
+			<p>小满精品电子商务（大连）有限公司 &copy;2017-2018 备案号：辽ICP备17017511号-1</p>
+		</div>
+	</div>
+	<!-- 右侧导航 -->
+	<div class="nav_sidebar_right">
+		<ul>
+			<li><a href="" class="contact"></a></li>
+			<li><a href="" class="weixin"></a></li>
+			<li><a href="" class="weibo"></a></li>
+			<li><a href="" class="backtop"></a></li>
+		</ul>
+	</div>
 </body>
+
 </html>

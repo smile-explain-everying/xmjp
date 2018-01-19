@@ -16,6 +16,7 @@
 	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="../static/touch-icon-ipad-144.png" /> 
 	<link rel="stylesheet" type="text/css" href="../static/css/main.css"/>
 	<link rel="stylesheet" href="../static/css/getTicket.css">
+	<script src="../static/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<!--[if lt IE 9]>
 	<script src="../static/js/html5.js"></script>
 	<![endif]-->
@@ -118,83 +119,121 @@
 					<img src="../static/tempimages/getticketbanner.jpg"/>
 			</div>
 			<!--领券开始-->
-			<div>
-				<ul class="getticketList">
-					<li>
+			<div class="listbox"> 
+				<!--领取的优惠券的列表 现在一共两行两列        一个li 一个优惠券-->
+				<ul class="getticketList"> 
+					<li id="first" class="available_one" data-timer="2018/1/22 11:01:00">
 						<p class="left"><img src="../static/tempimages/ticketimg01.jpg"/></p>
 						<p class="middle">
 							<span class="manjian">满500减499券</span><br />
 							<span class="dataTo">2018-01-02至2018-01-03</span><br />
 							<span class="where">员工专区</span>
 						</p>
-						<p class="right">
+						<p class="right shop-coupon_col-r">
 							<span>离结束还有</span>
-							<span class="time">
+							<span class="time rtime">
 								05:41:28
 							</span><br />
 							<span class="getnow">立即领取</span>
 						</p>
 					</li>
-					<li>
+					<li class="available_one" data-timer="2018/1/13 10:05:23">
 						<p class="left"><img src="../static/tempimages/ticketimg01.jpg"/></p>
 						<p class="middle">
 							<span class="manjian">满500减499券</span><br />
 							<span class="dataTo">2018-01-02至2018-01-03</span><br />
 							<span class="where">员工专区</span>
 						</p>
-						<p class="right">
+						<p class="right shop-coupon_col-r">
 							<span>离结束还有</span>
-							<span class="time">
+							<span class="time rtime">
 								05:41:28
 							</span><br />
 							<span class="getnow">立即领取</span>
 						</p>
 					</li>
-					<li>
+					<li  class="available_one" data-timer="2018/1/12 9:05:23">
 						<p class="left"><img src="../static/tempimages/ticketimg01.jpg"/></p>
 						<p class="middle">
 							<span class="manjian">满500减499券</span><br />
 							<span class="dataTo">2018-01-02至2018-01-03</span><br />
 							<span class="where">员工专区</span>
 						</p>
-						<p class="right">
+						<p class="right shop-coupon_col-r">
 							<span>离结束还有</span>
-							<span class="time">
+							<span class="time rtime">
 								05:41:28
 							</span><br />
 							<span class="getnow">立即领取</span>
 						</p>
 					</li>
-					<li>
+					<li  class="available_one" data-timer="2018/1/15 9:04:23">
 						<p class="left"><img src="../static/tempimages/ticketimg01.jpg"/></p>
 						<p class="middle">
 							<span class="manjian">满500减499券</span><br />
-							<span class="dateTo">2018-01-02至2018-01-03</span><br />
+							<span class="dataTo">2018-01-02至2018-01-03</span><br />
 							<span class="where">员工专区</span>
 						</p>
-						<p class="right">
+						<p class="right shop-coupon_col-r">
 							<span>离结束还有</span>
-							<span class="time">
+							<span class="time rtime">
 								05:41:28
 							</span><br />
 							<span class="getnow">立即领取</span>
 						</p>
 					</li>
 				</ul>
+				
 						<!--加载更多-->
-				<div class="lodemore">
-					<a href="">点击加载更多</a>
+				<div class="lodemore" data-status="1">
+					<a href="javascript:void(0);">点击加载更多</a>
+					<input type="hidden" id="page" value="2"> 
 				</div>
 			</div>
 			<!--领券结束-->
-	</div>
+		</div>
 	</div>
 	<!-- 内容结束 -->
 	
 	 <!-- 页脚 -->
    <div class="footer">
-   	
-   </div>
+		<div class="layout footer_link clearfix">
+			<ul class="footer_col_1">
+				<li>关于我们</li>
+				<li><a href="">公司简介</a></li>
+				<li><a href="">公司简介</a></li>
+				<li><a href="">联系我们</a></li>			
+			</ul> 
+			<ul class="footer_col_2">
+				<li>订单服务</li>
+				<li><a href="">购买指南</a></li>
+				<li><a href="">支付方式</a></li>
+				<li><a href="">送货政策</a></li>
+			</ul>
+			<ul class="footer_col_3">
+				<li>关注我们</li>
+				<li><a href="">新浪微博</a></li>
+				<li><a href="">官方微信</a></li>
+			</ul>
+			<ul class="footer_col_4">
+				<li style="font-size: 24px;">400-996-4866</li>
+				<li>周一至周五 9:00 - 18:00 (仅工作日)</li>
+			</ul>
+			<ul class="footer_col_5">
+				<li>
+					<img src="../static/images/appdown.png" alt="">
+					<p>下载APP</p>
+				</li>
+			</ul>
+		</div>	
+		<div class="layout footer_bar">
+			<p>小满精品电子商务（大连）有限公司 &copy;2017-2018    备案号：辽ICP备17017511号-1</p>
+		</div> 
+	</div>
    <!-- 页脚结束 -->
+   <script src="../static/js/jquery.min.js"></script>	
+   <!--<script src="../static/js/common.js"></script>-->
+   <!--<script src="../static/js/shop.js"></script>-->
+   <script src="../static/js/getTicket.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>个人资料</title>
+	<title>个人资料 personalData</title>
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -50,7 +50,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="bar_right"  style="display: none;>
+				<div class="bar_right"  style="display: none;">
 					<a href="">登录</a>&nbsp;&nbsp;
 					<a href="">注册&nbsp;&nbsp;|&nbsp;</a>
 					<a href="">我的订单</a>&nbsp;&nbsp;|
@@ -142,62 +142,76 @@
 		
 		<div class="content_right">
 			<div class="user">
-				
+				<form action="" method="post">
+					<label for="userimg">
 					<div class="userPhoto">
-							<img src="../static/images/user.png" alt=""/>
+							<img src="../static/images/user.png" id="imgSdf" alt="头像"/>
 							<span class="imgcamera"></span>
-						<input type="file"  id="userimg" value=""  accept="image/jpeg,image/jpg,image/png"/>
-						
-						
+						<input type="file"  id="userimg" value="" onchange="f_change(this);"  accept="image/jpeg,image/jpg,image/png"/>
 					</div>
+					</label>
 					<div class="user_info">
 						<p><span>昵&nbsp;&nbsp;&nbsp;&nbsp;称</span><input type="text" name="nickname" value="Superman" class="nickName"><br /></p>
 						<p class="mt20"><span>手机号码</span><span class="phonenumber">15998496363</span></p>
 					</div>
-					<input type="submit" name="" id="submit" value="" />
+					<input type="submit" name="submit" id="submit" value=""  hidden="hidden" />
 					<label for="submit">
 						<div class="submitBtn">提交</div>
 					</label>
-			
+				</form>	
 			</div>
 		</div>
 	</div>
-	<div class="zz">
-		
-	</div>
-	<div class="pop">
-				<p><i></i></p>
-				<div class="poptext">
-					选择头像
-				</div>
-				<label for="userimg">
-					<div class="addimg">
-						<span>+&nbsp;&nbsp;&nbsp;&nbsp;</span><span>点击上传图片</span>
-					</div>		
-				</label>
-				<center class="mt20">支持PNG/JPG</center>
-				<div class="confirm">
-					确认
-				</div>
-				
+	<div class="footer mt60">
+		<div class="layout footer_link clearfix">
+			<ul class="footer_col_1">
+				<li>关于我们</li>
+				<li><a href="">公司简介</a></li>
+				<li><a href="">公司简介</a></li>
+				<li><a href="">联系我们</a></li>			
+			</ul>
+			<ul class="footer_col_2">
+				<li>订单服务</li>
+				<li><a href="">购买指南</a></li>
+				<li><a href="">支付方式</a></li>
+				<li><a href="">送货政策</a></li>
+			</ul>
+			<ul class="footer_col_3">
+				<li>关注我们</li>
+				<li><a href="">新浪微博</a></li>
+				<li><a href="">官方微信</a></li>
+			</ul>
+			<ul class="footer_col_4">
+				<li style="font-size: 24px;">400-996-4866</li>
+				<li>周一至周五 9:00 - 18:00 (仅工作日)</li>
+			</ul>
+			<ul class="footer_col_5">
+				<li>
+					<img src="../static/images/appdown.png" alt="">
+					<p>下载APP</p>
+				</li>
+			</ul>
+		</div>	
+		<div class="layout footer_bar">
+			<p>小满精品电子商务（大连）有限公司 &copy;2017-2018    备案号：辽ICP备17017511号-1</p>
+		</div> 
 	</div>
 	<script type="text/javascript" src="../static/js/jquery.min.js"></script>
-	<script src="../static/js/banner_list.js"></script>
-	<script>
-		$(document).ready(function(){
-			$('.userPhoto').click(function(){
-				$('.zz').css("display","block")
-				$('.pop').css("display","block")
-			})
-			$('.pop p').click(function(){
-				$('.zz').css("display","none")
-				$('.pop').css("display","none")
-			})
-			$('.confirm').click(function(){
-				$('.zz').css("display","none")
-				$('.pop').css("display","none")
-			})
-		})	
+	<script type="text/javascript">
+		//JS file 图片 即选即得 显示  
+			//创建一个FileReader对象  
+			var reader = new FileReader();  
+			function f_change(file){  
+			    var img = document.getElementById('imgSdf');  
+			    //读取File对象的数据  
+			    reader.onload = function(evt){  
+			        //data:img base64 编码数据显示 
+			         img.width  =  "70";  
+       				 img.height =  "70"; 
+			        img.src = evt.target.result;  
+			    }  
+			    reader.readAsDataURL(file.files[0]);  
+			}  
 	</script>
 </body>
 </html>

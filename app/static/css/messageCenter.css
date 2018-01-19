@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* 单行文字溢出时出现省略号，需设定宽度 */
+/* 单行文字溢出时出现省略号，需设定宽度 */
+.left_nav {
+  float: left;
+  width: 158px;
+  border: 1px solid #e3e3e3;
+  padding-bottom: 35px; }
+  .left_nav ul {
+    text-align: center;
+    margin-top: 35px; }
+    .left_nav ul li {
+      margin-top: 11px; }
+    .left_nav ul h4 {
+      font-size: 16px; }
+      .left_nav ul h4 a {
+        color: #000; }
+    .left_nav ul a {
+      color: #666666; }
+    .left_nav ul li:hover a {
+      color: #b48b78; }
+    .left_nav ul .change {
+      color: #b48b78; }
+
+.content {
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: 40px;
+  overflow: hidden; }
+  .content .content_right_box {
+    overflow: hidden;
+    width: 908px;
+    float: right;
+    margin-bottom: 20px; }
+    .content .content_right_box .content_right_box_tab {
+      height: 64px;
+      border: 1px solid #e3e3e3;
+      background: #f6f6f6; }
+      .content .content_right_box .content_right_box_tab ul {
+        overflow: hidden;
+        font-size: 16px;
+        color: #9c9c9c; }
+        .content .content_right_box .content_right_box_tab ul li {
+          float: left;
+          margin-left: 30px;
+          line-height: 64px;
+          cursor: pointer; }
+    .content .content_right_box .content_right {
+      border: 1px solid #e3e3e3;
+      padding-top: 29px;
+      margin-top: 20px;
+      padding-bottom: 29px;
+      display: none; }
+      .content .content_right_box .content_right .content_right_title {
+        position: relative;
+        font-size: 14px; }
+        .content .content_right_box .content_right .content_right_title input {
+          display: block;
+          width: 14px;
+          height: 14px;
+          margin-left: 28px; }
+        .content .content_right_box .content_right .content_right_title .titles {
+          width: 780px;
+          position: absolute;
+          left: 87px;
+          top: -5px;
+          border-bottom: 1px solid #e3e3e3;
+          padding-bottom: 10px; }
+          .content .content_right_box .content_right .content_right_title .titles span {
+            color: #666666; }
+          .content .content_right_box .content_right .content_right_title .titles span:nth-child(1) {
+            margin-left: 219px; }
+          .content .content_right_box .content_right .content_right_title .titles span:nth-child(2) {
+            margin-left: 390px; }
+      .content .content_right_box .content_right .message_list {
+        margin-top: 20px;
+        padding-top: 20px; }
+        .content .content_right_box .content_right .message_list input {
+          width: 14px;
+          height: 14px;
+          margin-left: 28px; }
+        .content .content_right_box .content_right .message_list .message_content {
+          width: 780px;
+          margin-left: 90px;
+          margin-top: -25px;
+          padding-bottom: 20px;
+          cursor: pointer;
+          border-bottom: 1px solid #e3e3e3; }
+          .content .content_right_box .content_right .message_list .message_content a {
+            display: block;
+            width: 500px;
+            margin-left: 10px;
+            color: #666666;
+            font-size: 14px; }
+          .content .content_right_box .content_right .message_list .message_content .message_open {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+          .content .content_right_box .content_right .message_list .message_content .message_time {
+            margin-left: 580px;
+            margin-top: -20px; }
+      .content .content_right_box .content_right .message_lists {
+        margin-top: 10px; }
+      .content .content_right_box .content_right .del {
+        margin-top: 40px;
+        margin-left: 90px; }
+        .content .content_right_box .content_right .del button {
+          width: 88px;
+          height: 28px;
+          border: 1px solid #c6c6c6;
+          background: #f6f6f6;
+          color: #333333;
+          outline: none;
+          cursor: pointer; }

@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@import "helpers/_mixins.scss";
+@import "components/_personalCenterLeftNav.scss";
+.content {
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 40px;
+    overflow: hidden;
+    .content_right_box {
+        overflow: hidden;
+        width: 908px;
+        float: right;
+        margin-bottom: 20px;
+//      border: 1px solid #e3e3e3;
+        .content_right_box_tab{
+            height: 64px;
+            border: 1px solid #e3e3e3;
+            background: #f6f6f6;
+            ul{
+                overflow: hidden;
+                font-size: 16px;
+                color: #9c9c9c;
+               // font-weight: 800;
+                li{
+                    float: left;
+                    margin-left: 30px;
+                    line-height: 64px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .content_right {
+            border: 1px solid #e3e3e3;
+            padding-top: 29px;
+            margin-top: 20px;
+            padding-bottom: 29px;
+            display: none;
+            .content_right_title {
+                position: relative;
+                font-size: 14px;
+                input {
+                    display: block;
+                    width: 14px;
+                    height: 14px;
+                    margin-left: 28px;
+                }
+                .titles {
+                    width: 780px;
+                    position: absolute;
+                    left: 87px;
+                    top: -5px;
+                    border-bottom: 1px solid #e3e3e3;
+                    padding-bottom: 10px;
+                    span {
+                        color: #666666;
+                    }
+                    span:nth-child(1) {
+                        margin-left: 219px;
+                    }
+                    span:nth-child(2) {
+                        margin-left: 390px;
+                    }
+                }
+            }
+            .message_list {
+                margin-top: 20px;
+                padding-top: 20px;
+                //          padding-bottom: 20px;
+                input {
+                    width: 14px;
+                    height: 14px;
+                    margin-left: 28px;
+                }
+                .message_content {
+                    width: 780px;
+                    margin-left: 90px;
+                    margin-top: -25px;
+                    padding-bottom: 20px;
+                    cursor: pointer;
+                    border-bottom: 1px solid #e3e3e3;
+                    a {
+                        display: block;
+                        width: 500px;
+                        margin-left: 10px;
+                        color: #666666;
+                        font-size: 14px;
+                    }
+                    .message_open {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        //white-space:normal
+                    }
+                    .message_time {
+                        margin-left: 580px;
+                        margin-top: -20px;
+                    }
+                }
+            }
+            .message_lists {
+                margin-top: 10px;
+            }
+            .del {
+                margin-top: 40px;
+                margin-left: 90px;
+                button {
+                    width: 88px;
+                    height: 28px;
+                    border: 1px solid #c6c6c6;
+                    background: #f6f6f6;
+                    color: #333333;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

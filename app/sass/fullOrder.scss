@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@import  "helpers/_mixins.scss";
+@import  "components/_personalCenterLeftNav.scss";
+@import  "layout/_guess.scss";
+.content{
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 40px;
+    .content_right{
+        width: 908px;
+        float: right;
+        .content_right_title{
+            border: 1px solid #e3e3e3;
+            height: 64px;
+            background: #f6f6f6;
+            ul{
+                overflow: hidden;
+                margin-left: 10px;
+                li{
+                    float: left;
+                    margin-left: 30px;
+                    line-height: 64px;
+                    font-size: 16px;
+                    a{
+                        color: #333333;
+                    }
+                }
+                li:last-child{
+                    float: right;
+                    margin-right: 40px;
+                }
+                .run{
+                    color: #b48b78;
+                }
+            }
+        }
+        //操作
+        .operation{
+            height: 64px;
+            border: 1px solid #e3e3e3;
+            margin-top: 20px;
+            background: #f6f6f6;
+            ul{
+                overflow: hidden;
+                font-size: 16px;
+                color: #333333;
+                li{
+                    float: left;
+                    line-height: 64px;
+                }
+                li:first-child{
+                    margin-left: 120px;
+                }
+                li:nth-child(2){
+                    margin-left: 135px;
+                }
+                li:nth-child(3){
+                    margin-left: 50px;
+                }
+                li:nth-child(4){
+                    margin-left: 30px;
+                }
+                li:nth-child(5){
+                    margin-left: 70px;
+                }
+                li:nth-child(6){
+                    margin-left:75px;
+                }
+                li:nth-child(7){
+                    margin-left:65px;
+                }
+            }
+        }
+        //订单详情
+        .order_details{
+            border: 1px solid #e3e3e3;
+            margin-top: 20px;
+            .order_details_title{
+                height: 55px;
+                background: #f6f6f6;
+                ul{
+                    overflow: hidden;
+                    margin-left: 10px;
+                    li{
+                        float: left;
+                        line-height: 55px;
+                        font-size: 12px;
+                        margin-left: 30px;
+                        color: #333333;
+                        a{
+                            display: inline-block;
+                            border: 1px solid #797979;
+                            border-radius: 10px;
+                            width: 98px;
+                            height: 28px;
+                            text-align: center;
+                            margin-top: 12px;
+                            color: #333333;
+                            background: #fff;
+                        }
+                    }
+                    li:last-child{
+                        line-height:28px;
+                    }
+                }
+            }
+            //物品
+            .each_order{
+                overflow: hidden;
+                .each_order_left{
+                    float: left;
+                    font-size: 12px;
+                    ul:last-child{
+                        border: 0px;
+                    }
+                    ul{
+                        margin-top: 30px;
+                        padding-bottom: 30px;
+                        overflow: hidden;
+                        margin-left: 20px;
+                        border-bottom: 1px solid #c6c6c6;
+                        
+                        li{
+                            float: left;
+                        }
+                        li:nth-child(1){
+                            
+                        }
+                        li:nth-child(2){
+                            width: 120px;
+                            margin-left: 10px;
+                            p{
+                                margin-top: 30px;
+                                height: 60px;
+                                overflow: hidden;
+                            }
+                        }
+                        li:nth-child(3){
+                            
+                            margin-left: 20px;
+                            width: 75px;
+                            p{
+                              margin-top: 35px;  
+                            }
+                        }
+                        li:nth-child(4){   
+                            margin-left: 25px;
+                            width: 25px;
+                            p{
+                              margin-top: 35px;  
+                            }
+                        }
+                        li:nth-child(5){   
+                            margin-left: 30px;
+                            width: 25px;
+                            p{
+                              margin-top: 35px;  
+                            }
+                        }
+                    }
+                }
+                 .each_order_right{
+                     float: right;
+                     font-size: 12px;
+                     ul{
+                         overflow: hidden;
+                         li{
+                             display:block;
+                             float: left;
+                         }
+                         li:nth-child(3){
+                             margin-right: 10px;
+                             text-align: center;
+                             width: 120px;
+                             a{
+                                display: block;
+                                width: 88px;
+                                height: 28px;
+                                border: 1px solid #c6c6c6;
+                                background: #f7f7f7;
+                                line-height: 28px;
+                                margin-left: 10px;
+                                margin-top: 10px;
+                                color: #000000;
+                             }
+                         }
+                         li:nth-child(2){
+                             width:85px;
+                             height: 72px;
+                             text-align: center;
+                             margin-right: 55px;
+                             a{
+                                 line-height: 25px;
+                                 color: #000000;
+                                 display: block;
+                             }
+                         }
+                         li:nth-child(1){
+                            width: 125px;
+                            margin-right: 40px;
+                            text-align: center;
+                            p{
+                                 margin-top: 6px;
+                                 color: red;
+                            }
+                         }
+                     }
+                 }    
+            }
+        }
+    }
+}

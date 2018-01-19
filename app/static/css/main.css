@@ -121,12 +121,24 @@ table, tr {
   margin-top: 40px; }
 
 .mt60 {
-  margin-top: 40px; }
+  margin-top: 100px; }
 
 .fn-rmb {
   font-family: arial;
   font-style: normal;
   padding-right: 4px; }
+
+::-webkit-input-placeholder {
+  color: #a6a6a6; }
+
+:-moz-placeholder {
+  color: #a6a6a6; }
+
+::-moz-placeholder {
+  color: #a6a6a6; }
+
+:-ms-input-placeholder {
+  color: #a6a6a6; }
 
 i {
   display: inline-block;
@@ -244,12 +256,98 @@ i {
       .nav .layout ul li a {
         font-size: 14px;
         line-height: 14px;
-        color: #000;
+        color: #333;
         font-weight: bold;
         padding-bottom: 4px; }
       .nav .layout ul li .active {
         color: #b48b78;
         border-bottom: 2px solid #b48b78; }
+
+.login-pop {
+  position: fixed;
+  padding: 60px 0;
+  width: 400px;
+  height: 286px;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  z-index: 9999;
+  margin: -200px 0 0 -203px;
+  text-align: center; }
+  .login-pop h5 {
+    font-size: 16px;
+    color: #333; }
+  .login-pop .account_number {
+    width: 285px;
+    height: 34px;
+    border: 1px solid #d6d6d6;
+    margin: 20px auto 0;
+    text-align: left; }
+    .login-pop .account_number span {
+      height: 34px;
+      width: 44px;
+      display: inline-block;
+      line-height: 38px;
+      text-align: center;
+      color: #a6a6a6;
+      font-size: 14px;
+      border-right: 1px solid #d6d6d6; }
+    .login-pop .account_number input {
+      width: 230px;
+      height: 30px;
+      border: 0px;
+      font-size: 14px;
+      color: #333333;
+      margin-left: 10px; }
+  .login-pop .account_number_err {
+    border: 1px solid #f43500; }
+  .login-pop .prompt_error {
+    text-align: left;
+    margin-left: 60px; }
+    .login-pop .prompt_error span {
+      display: inline-block;
+      color: #f43500;
+      margin-left: 6px;
+      font-size: 12px; }
+    .login-pop .prompt_error i {
+      width: 13px;
+      height: 13px;
+      margin-left: 10px;
+      background-position-x: -77px;
+      background-position-y: -4px; }
+  .login-pop .account_Password {
+    margin-top: 0px; }
+  .login-pop .forget_Password {
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 60px;
+    font-size: 12px; }
+    .login-pop .forget_Password a {
+      color: #a6a6a6; }
+  .login-pop .login_btn {
+    width: 284px;
+    height: 46px;
+    color: #fff;
+    background: #b48b78;
+    border: 0px;
+    margin-top: 30px;
+    font-size: 18px;
+    cursor: pointer; }
+  .login-pop .xm_register {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px; }
+    .login-pop .xm_register a {
+      color: #a6a6a6; }
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6); }
 
 /*zh 2016 0310*/
 /* 单行文字溢出时出现省略号，需设定宽度 */
@@ -303,7 +401,7 @@ i {
   position: fixed;
   right: 2%;
   bottom: 2%;
-  z-index: 9999; }
+  z-index: 999; }
   .nav_sidebar_right li {
     margin-bottom: 8px; }
     .nav_sidebar_right li a {

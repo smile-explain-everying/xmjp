@@ -1,4 +1,11 @@
 @charset "UTF-8";
+/*活动列表*/
+/* 单行文字溢出时出现省略号，需设定宽度 */
+.listText p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 .list1 {
   width: 1100px;
   height: 240px;
@@ -10,6 +17,8 @@
 .listText {
   width: 603px;
   padding-left: 16px; }
+  .listText p {
+    width: 603px; }
   .listText .title {
     font-size: 18px; }
   .listText .date {
@@ -25,12 +34,15 @@
     overflow: hidden; }
   .listText a {
     font-size: 14px;
+    color: #cccccc; }
+  .listText a:hover {
     color: #5f8ce3; }
 
 .somePage {
   width: 1000px;
   margin: auto 0;
-  text-align: center; }
+  text-align: center;
+  margin-top: 60px; }
   .somePage a {
     /*padding: 0 9px;*/
     width: 30px;
