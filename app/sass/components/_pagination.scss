@@ -1,3 +1,44 @@
 @charset "utf-8";
 /*分页共通样式*/
 @import  "helpers/_mixins.scss";  
+
+.somePage {
+    width:1100px;
+    padding:10px 0 50px;
+    text-align: center;
+    a{
+        /*padding: 0 9px;*/ 
+        width: 30px;
+        height:30px;
+        line-height:30px;
+        margin: 3px;
+        display: inline-block;
+        text-align: center;
+        border: 1px solid #dbdada;
+        color: #666;
+        font-weight: 700;
+        &:hover{
+            background: $activeColor; 
+            color: #fff; 
+            border: 1px solid $activeColor;
+        }
+    }
+    .iconPagePrev,.iconPageNext,.homePage,.endPage{
+       padding: 0 9px;
+       width: 50px;
+       height: 30px;
+       line-height: 30px;
+       color: #666;
+       border: 1px solid #dbdada;
+       &:hover{
+            background: $activeColor;
+            color: #fff;
+            border: 1px solid $activeColor;
+       }
+   }
+    a.current {
+    background: $activeColor;
+    color: #fff;
+    border: 1px solid $activeColor;
+   }
+}

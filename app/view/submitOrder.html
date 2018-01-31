@@ -143,7 +143,11 @@
                 </ul>
                 <div class="operation">
                     <p class="default">
-                        <input type="checkbox"> 设为默认
+                        <span class="set">
+                                    <input type="checkbox" id="set_label"> 
+                                    <label for="set_label"></label>
+                                </span>
+                        <span>设为默认</span>
                     </p>
                     <p class="btn">
                         <a href="javascript:;" class="prese">保存地址</a>
@@ -283,7 +287,7 @@
                                 </div>
                             </li>
                             <li class="list_price">
-                                ¥ <span>2699.00</span>
+                                ¥ <span>3000.00</span>
                             </li>
                             <li class="list_num">
                                 <div id="calculation">
@@ -322,31 +326,52 @@
             <div class="coupons">
                 <p class="coupons_title">使用优惠券</p>
                 <p class="coupons_opertion">
-                    <a href="" class="choice_coupons">选择优惠券</a>
-                    <a href="" class="cancel_coupons">取消使用</a>
+                    <a href="javascript:;" class="choice_coupons">选择优惠券</a>
+                    <a href="javascript:;" class="cancel_coupons">取消使用</a>
                 </p>
             </div>
             <!-- Settlement结算 -->
             <div class="settlement clearfix">
-                <div class="style_coupons">
-
-                </div>
+                <ul class="style_coupons">
+                    <!-- <li class="coupon_item">
+                        <div class="item_left">
+                            <span class="tips">￥</span>
+                            <span class="price">20</span>
+                        </div>
+                        <div class="item_right">
+                            <p class="spe">满199可用</p>
+                            <p class="data">2018-01-1至2018-12-12</p>
+                            <p class="limit">进口食品专区</p>
+                        </div>
+                    </li> -->
+                </ul>
                 <div class="set_list">
                     <p>
                         <span class="set_title">商品合计：</span>
-                        <span class="set_contain">￥2699.00</span>
+                        <span class="set_contain">
+                            ￥
+                            <span class="count_price">2699.00</span>
+                        </span>
                     </p>
                     <p>
                         <span class="set_title">运费：</span>
-                        <span class="set_contain">￥2699.00</span>
+                        <span class="set_contain">
+                            ￥
+                            <span class="count_send">2699.00</span>
+                        </span>
                     </p>
                     <p>
                         <span class="set_title">优惠券：</span>
-                        <span class="set_contain">￥2699.00</span>
+                        <span class="set_contain">
+                            -￥
+                            <span class="count_coupon">2699.00</span>
+                        </span>
                     </p>
                     <p class="paid">
                         <span class="set_title">实付金额：</span>
-                        <span class="paid_money">￥2699.00</span>
+                        <span class="paid_money">￥
+                            <span class="count_money">2699.00</span>
+                        </span>
                     </p>
                     <p class="set_submit">
                         <a href="" class="" id="set_submit">提交订单</a>
@@ -496,6 +521,76 @@
             <li><a href="" class="weibo"></a></li>
             <li><a href="" class="backtop"></a></li>
         </ul>
+    </div>
+    <!-- 选择优惠券弹窗 -->
+    <div class="choice_coupon">
+        <div class="layout">
+            <div class="coupon_box">
+                <p class="title">可用优惠券</p>
+                <ul class="coupon_list clearfix">
+                    <li class="coupon_item">
+                        <div class="item_left">
+                            <span class="tips">￥</span>
+                            <span class="price">20</span>
+                        </div>
+                        <div class="item_right">
+                            <p class="spe">满199可用</p>
+                            <p class="data">2018-01-1至2018-12-12</p>
+                            <p class="limit">进口食品专区</p>
+                        </div>
+                    </li>
+                    <li class="coupon_item">
+                        <div class="item_left">
+                            <span class="tips">￥</span>
+                            <span class="price">30</span>
+                        </div>
+                        <div class="item_right">
+                            <p class="spe">满199可用</p>
+                            <p class="data">2018-01-1至2018-12-12</p>
+                            <p class="limit">进口食品专区</p>
+                        </div>
+                    </li>
+                    <li class="coupon_item">
+                        <div class="item_left">
+                            <span class="tips">￥</span>
+                            <span class="price">40</span>
+                        </div>
+                        <div class="item_right">
+                            <p class="spe">满199可用</p>
+                            <p class="data">2018-01-1至2018-12-12</p>
+                            <p class="limit">进口食品专区</p>
+                        </div>
+                    </li>
+                    <li class="coupon_item">
+                        <div class="item_left">
+                            <span class="tips">￥</span>
+                            <span class="price">50</span>
+                        </div>
+                        <div class="item_right">
+                            <p class="spe">满199可用</p>
+                            <p class="data">2018-01-1至2018-12-12</p>
+                            <p class="limit">进口食品专区</p>
+                        </div>
+                    </li>
+                    <li class="coupon_item">
+                        <div class="item_left">
+                            <span class="tips">￥</span>
+                            <span class="price">60</span>
+                        </div>
+                        <div class="item_right">
+                            <p class="spe">满199可用</p>
+                            <p class="data">2018-01-1至2018-12-12</p>
+                            <p class="limit">进口食品专区</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="coupon_operation">
+                    <a href="javascript:;" class="preservation">保存</a>
+                    <a href="javascript:;" class="cancle">取消</a>
+                </div>
+                <div class="draw"></div>
+            </div>
+        </div>
     </div>
     <script type="text/javascript" src="../static/js/jquery.min.js"></script>
     <script src="../static/js/distpicker.data.js"></script>

@@ -112,6 +112,11 @@
 	<!-- 头部结束 -->
 	<!-- 产品详情样式 -->
 	<div class="content">
+		<div class="layout">
+			<div class="crumbs">
+				<a href="">首页</a><span>>&nbsp;搜索页面</span>
+			</div>
+		</div>
 		<div id="product" class="layout clearfix">
 			<div class="product_picture fn-fl">
 				<div id="vertical" class="bigImg">
@@ -372,9 +377,9 @@
 			})
 			//点击评价图片放大
 			$('.evaluate_list').on('click', '.item .images img', function () {
-                if($(this).hasClass('large')){
+				if ($(this).hasClass('large')) {
 					$(this).removeClass('large');
-				}else{
+				} else {
 					$(this).addClass('large');
 					$(this).siblings('img').removeClass('large');
 				}

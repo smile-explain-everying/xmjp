@@ -1,7 +1,7 @@
 @charset "utf-8";
-@charset "utf-8";
 /*活动列表*/
 @import  "helpers/_mixins.scss";                  //常用变量定义
+@import  "components/_pagination.scss";           //分页样式
 //活动名称列表样式
 
 .list1{
@@ -10,6 +10,9 @@
     padding-bottom: 30px;
     padding-top: 30px;
     border-bottom: 1px solid #d6d6d6;
+}
+.activitylist{
+    padding-bottom: 50px;
 }
 /* 列表右面文字布局 */
 .listText{
@@ -42,46 +45,4 @@
     a:hover{
         color: #5f8ce3;
     }
-}
-//分页样式
-.somePage {
-    width:1000px;
-    margin: auto 0;
-    text-align: center;
-    margin-top: 60px;
-    a{
-        /*padding: 0 9px;*/ 
-        width: 30px;
-        height:30px;
-        line-height:30px;
-        margin: 3px;
-        display: inline-block;
-        text-align: center;
-        border: 1px solid #e3e3e3;
-        color: #666;
-        font-weight: 700;
-        &:hover{
-            background: #ff9c00; 
-            color: #fff; 
-            border: 1px solid #ff9c00;
-        }
-    }
-    .iconPagePrev,.iconPageNext,.homePage,.endPage{
-       padding: 0 9px;
-       width: 50px;
-       height: 26px;
-       line-height: 26px;
-       color: #666;
-       border: 1px solid #dbdada;
-       &:hover{
-            background: #ff9c00;
-            color: #fff;
-            border: 1px solid #ff9c00;
-       }
-   }
-    a.current {
-    background: #b48b78;
-    color: #fff;
-    border: 0px solid #ff9c00;
-   }
 }

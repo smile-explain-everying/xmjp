@@ -15,7 +15,7 @@
 
 ///////////////////////////商品详情左半部分//////////////////////////
 #product{
-	margin-top: 30px;
+	// margin-top: 30px;
 	position: relative;
 	.product_picture{
 		width: 430px;
@@ -261,6 +261,13 @@
 			color: #fff;
 		}
 	}
+	.cart{
+		color: #fff;
+		background: $activeColor;
+		&:hover{
+			background: #c79a85;
+		}
+	}
 	.collection{
 		display: inline-block;
 		width: 48px;
@@ -356,6 +363,21 @@
 }
 
 ///////////////////////////商品详情部分//////////////////////////////
+
+.crumbs{
+	a{
+		line-height: 56px;
+		font-size: 12px;
+		height: 56px;
+		margin-right: 5px;
+		color: $fontColor;
+	}
+	span{
+		font-size: 12px;
+		color: #999999;
+	}
+}
+
 #product_information{
 	min-height: 300px;
 	border: 1px solid $borderColor;

@@ -6,12 +6,57 @@
   text-overflow: ellipsis;
   white-space: nowrap; }
 
+/*分页共通样式*/
+/* 单行文字溢出时出现省略号，需设定宽度 */
+.listText p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.somePage {
+  width: 1100px;
+  padding: 10px 0 50px;
+  text-align: center; }
+  .somePage a {
+    /*padding: 0 9px;*/
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 3px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #dbdada;
+    color: #666;
+    font-weight: 700; }
+    .somePage a:hover {
+      background: #b48b78;
+      color: #fff;
+      border: 1px solid #b48b78; }
+  .somePage .iconPagePrev, .somePage .iconPageNext, .somePage .homePage, .somePage .endPage {
+    padding: 0 9px;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    border: 1px solid #dbdada; }
+    .somePage .iconPagePrev:hover, .somePage .iconPageNext:hover, .somePage .homePage:hover, .somePage .endPage:hover {
+      background: #b48b78;
+      color: #fff;
+      border: 1px solid #b48b78; }
+  .somePage a.current {
+    background: #b48b78;
+    color: #fff;
+    border: 1px solid #b48b78; }
+
 .list1 {
   width: 1100px;
   height: 240px;
   padding-bottom: 30px;
   padding-top: 30px;
   border-bottom: 1px solid #d6d6d6; }
+
+.activitylist {
+  padding-bottom: 50px; }
 
 /* 列表右面文字布局 */
 .listText {
@@ -37,39 +82,3 @@
     color: #cccccc; }
   .listText a:hover {
     color: #5f8ce3; }
-
-.somePage {
-  width: 1000px;
-  margin: auto 0;
-  text-align: center;
-  margin-top: 60px; }
-  .somePage a {
-    /*padding: 0 9px;*/
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    margin: 3px;
-    display: inline-block;
-    text-align: center;
-    border: 1px solid #e3e3e3;
-    color: #666;
-    font-weight: 700; }
-    .somePage a:hover {
-      background: #ff9c00;
-      color: #fff;
-      border: 1px solid #ff9c00; }
-  .somePage .iconPagePrev, .somePage .iconPageNext, .somePage .homePage, .somePage .endPage {
-    padding: 0 9px;
-    width: 50px;
-    height: 26px;
-    line-height: 26px;
-    color: #666;
-    border: 1px solid #dbdada; }
-    .somePage .iconPagePrev:hover, .somePage .iconPageNext:hover, .somePage .homePage:hover, .somePage .endPage:hover {
-      background: #ff9c00;
-      color: #fff;
-      border: 1px solid #ff9c00; }
-  .somePage a.current {
-    background: #b48b78;
-    color: #fff;
-    border: 0px solid #ff9c00; }

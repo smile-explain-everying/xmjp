@@ -67,7 +67,7 @@
         }
     }
 }
-// 修改地址弹窗样式
+//////////////////////////// 修改地址弹窗样式//////////////////////////
 .add_address{
     position: fixed;
     top: 0;
@@ -101,7 +101,7 @@
     }
 }
 
-// 切换地址弹窗样式
+////////////////////////// 切换地址弹窗样式////////////////////////////
 
 .switch_address{
     position: fixed;
@@ -183,7 +183,7 @@
     display: none;
 }
 
-// 提交订单样式
+////////////////////////////提交订单样式//////////////////////////////////
 
 .order_submit{
     margin-top:40px;
@@ -363,6 +363,51 @@
            width: 75%;
            min-height: 250px;
            float: left;
+           li{
+            float: left;
+            width: 238px;
+            height: 90px;
+            margin-bottom: 20px;
+            background: url(../images/sprite.png);
+            background-position: -262px -192px;
+            cursor: pointer;
+            .item_left{
+                width: 35%;
+                height: 100%;
+                float: left;
+                color: #fff;
+                text-align: center;
+                line-height: 90px;
+                position: relative;
+                .tips{
+                    font-size: 16px;
+                    position: absolute;
+                    top:-10px;
+                    left:6px;
+                }
+                .price{
+                    font-size:36px;
+                }
+            }
+            .item_right{
+                width: 65%;
+                height: 100%;
+                padding: 20px 0;
+                @extend %box-sizing;
+                float: left;
+                p{
+                    font-size: 12px;
+                    color: #fff;
+                }
+                .limit{
+                    display: inline-block;
+                    padding: 1px 20px;
+                    background: #a8120b;
+                    margin-top: 5px;
+                    @include border-radius(10px)
+                }
+            }
+        }
         }
         .set_list{
             width: 25%;
@@ -403,6 +448,114 @@
                     margin: 0 auto;
                 }
             }
+        }
+    }
+}
+
+/////////////////////////选择优惠券弹窗样式///////////////////////////////
+
+.choice_coupon{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    left:0;
+    top:0;
+    display: none;
+    .coupon_box{
+        width: 550px;
+        height: 500px;
+        overflow:auto;
+        overflow-x: none; 
+        padding: 30px;
+        background: #fff;
+        margin: 200px auto 0;
+        position: relative;
+        .title{
+            font-size:16px;
+            padding-bottom: 40px;
+        }
+        .coupon_list{
+            li{
+                float: left;
+                width: 238px;
+                height: 90px;
+                margin-bottom: 20px;
+                background: url(../images/sprite.png);
+                background-position: -262px -192px;
+                cursor: pointer;
+                .item_left{
+                    width: 35%;
+                    height: 100%;
+                    float: left;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 90px;
+                    position: relative;
+                    .tips{
+                        font-size: 16px;
+                        position: absolute;
+                        top:-10px;
+                        left:6px;
+                    }
+                    .price{
+                        font-size:36px;
+                    }
+                }
+                .item_right{
+                    width: 65%;
+                    height: 100%;
+                    padding: 20px 0;
+                    @extend %box-sizing;
+                    float: left;
+                    p{
+                        font-size: 12px;
+                        color: #fff;
+                    }
+                    .limit{
+                        display: inline-block;
+                        padding: 1px 20px;
+                        background: #a8120b;
+                        margin-top: 5px;
+                        @include border-radius(10px)
+                    }
+                }
+            }
+            li:nth-child(odd){
+                margin-right: 50px;
+            }
+            li.active{
+                background-position: -260px -290px;
+            }
+        }
+        .coupon_operation{
+            text-align: center;
+            margin-top: 50px;
+            a{
+                display: inline-block;
+                width: 140px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+            }
+            .preservation{
+                color: #fff;
+                background: #c6c6c6;
+            }
+            .cancle{
+                color: #333;
+                border:1px solid #c6c6c6;
+            }
+        }
+        .draw{
+            width:30px;
+            height: 30px;
+            position: absolute;
+            top:30px;
+            right:30px;
+            background: url(../images/sprite.png);
+            background-position:-23px -403px;
+            cursor: pointer;
         }
     }
 }

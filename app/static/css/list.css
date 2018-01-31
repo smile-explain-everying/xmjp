@@ -106,13 +106,57 @@
         font-size: 14px;
         color: #fff; }
 
+/*分页共通样式*/
+/* 单行文字溢出时出现省略号，需设定宽度 */
+.content .shop-bd .item-bd-d li a p.brief {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.somePage {
+  width: 1100px;
+  padding: 10px 0 50px;
+  text-align: center; }
+  .somePage a {
+    /*padding: 0 9px;*/
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 3px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #dbdada;
+    color: #666;
+    font-weight: 700; }
+    .somePage a:hover {
+      background: #b48b78;
+      color: #fff;
+      border: 1px solid #b48b78; }
+  .somePage .iconPagePrev, .somePage .iconPageNext, .somePage .homePage, .somePage .endPage {
+    padding: 0 9px;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    border: 1px solid #dbdada; }
+    .somePage .iconPagePrev:hover, .somePage .iconPageNext:hover, .somePage .homePage:hover, .somePage .endPage:hover {
+      background: #b48b78;
+      color: #fff;
+      border: 1px solid #b48b78; }
+  .somePage a.current {
+    background: #b48b78;
+    color: #fff;
+    border: 1px solid #b48b78; }
+
 .banner .layout {
   width: 1100px;
   margin: 0 auto;
   padding: 0px; }
 
 .content {
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  padding-bottom: 100px;
+  position: relative; }
   .content .list-banner {
     padding-bottom: 80px;
     background-color: #fff; }
@@ -170,7 +214,7 @@
       .content .shop-bd .item-bd-d li {
         float: left;
         overflow: hidden;
-        margin: 25px 0 0 12px; }
+        margin: 25px 0 35px 12px; }
         .content .shop-bd .item-bd-d li a .item-pic {
           width: 250px;
           height: 250px;
@@ -188,10 +232,10 @@
         .content .shop-bd .item-bd-d li a p {
           text-align: center; }
         .content .shop-bd .item-bd-d li a p.type {
-          margin-top: 8px;
+          margin-top: 12px;
           height: 24px; }
         .content .shop-bd .item-bd-d li a p.brief {
-          margin-top: 2px;
+          margin-top: 5px;
           font-size: 14px;
           color: #333; }
         .content .shop-bd .item-bd-d li a p.money {

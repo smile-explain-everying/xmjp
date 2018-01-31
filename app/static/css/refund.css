@@ -177,7 +177,8 @@
 
 #thelist {
   margin-left: 113px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  height: auto; }
 
 .info {
   width: 100px;

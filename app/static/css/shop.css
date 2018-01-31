@@ -152,7 +152,7 @@
         overflow: hidden;
         background-image: url(../images/sprite.png);
         vertical-align: middle;
-        background-position: 0 -345px; }
+        background-position: -260px 0; }
         .content .shop-hd .shop-coupon li div .shop-coupon_col-l {
           font-size: 20px;
           color: #fff;
@@ -189,7 +189,7 @@
       margin-top: 0;
       line-height: 92px; }
     .content .shop-hd .shop-coupon .received div {
-      background-position: 0 -436px; }
+      background-position: -260px -96px; }
 
 .content .shop-bd .retrieval {
   height: 40px;

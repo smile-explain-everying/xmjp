@@ -102,6 +102,8 @@ $(function() {
 					if(num == len) {
 						$wholeChexbox.prop("checked", true);
 						$wholeChexbox.next('label').addClass('mark');
+						$('#sop_all').prop("checked", true);
+						$('#sop_all').next('label').addClass('mark');
 					}
 
 					
@@ -112,6 +114,8 @@ $(function() {
 					$wholeChexbox.prop("checked", false);
 					$wholeChexbox.next('label').removeClass('mark');
 
+					$('#sop_all').prop("checked", false);
+					$('#sop_all').next('label').removeClass('mark');
 					
 					$(this).parents('.cartBox').find('.son_check').prop("checked", false);
 					$(this).parents('.cartBox').find('.son_check').next('label').removeClass('mark');
